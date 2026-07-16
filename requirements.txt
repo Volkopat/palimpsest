@@ -1,0 +1,29 @@
+# Reproduction harness dependencies.
+# The three OCR engines have conflicting torch requirements, so a separate virtual
+# environment per engine is recommended (see README, "Environments").
+
+# --- Core (all scripts) ---
+pydicom==2.2.1
+numpy
+pillow
+
+# --- Figures ---
+matplotlib
+
+# --- Florence-2 detector-swap (reproduce/run_clean_detector_swap_florence.py) ---
+# Install torch + torchvision built for your GPU. This work used the CUDA 12.8 wheels:
+#   pip install torch torchvision --index-url https://download.pytorch.org/whl/cu128
+# Florence-2-base additionally requires a stub `flash_attn` module to satisfy its
+# unconditional import (the functions are never called); see README, "Florence-2 setup".
+transformers
+timm
+einops
+
+# --- EasyOCR detection (reproduce/run_engine_detection.py --engine easyocr) ---
+# In its own environment:
+#   pip install easyocr
+
+# --- Tesseract detection (reproduce/run_engine_detection.py --engine tesseract) ---
+# In its own environment, plus a system Tesseract 5 binary:
+#   pip install pytesseract
+#   (pass --tesseract-cmd /path/to/tesseract and --tessdata /path/to/tessdata)

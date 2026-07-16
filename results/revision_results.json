@@ -1,0 +1,1353 @@
+{
+  "summary": "robustness_carries_to_removal=yes (conditional on image quality) (blur-r4 removal FL 32 vs EO 18/35); prior_generalizes=yes-via-generic-fallback (NOT via the manufacturer catalogue) (held-out vendors 31/35).",
+  "meta": {
+    "seed": 0,
+    "git_commit": "043971a",
+    "midi_script_version": "packaged CBIIT MIDI_validation_script (unversioned)",
+    "date": "2026-07-15",
+    "coverage_threshold": 0.5,
+    "coverage_grid": 200,
+    "profile": "strict (margin on)",
+    "engines": {
+      "florence": "Florence-2-base VLM (florence-anon)",
+      "easyocr": "EasyOCR 1.7.1 CNN (midi-scorer, conf>=0.2)",
+      "tesseract": "Tesseract 5.5.2 (ocr3, psm 11, conf>20)"
+    }
+  },
+  "baseline_reproduction": {
+    "detection": {
+      "florence": 34,
+      "easyocr": 33,
+      "tesseract": 11
+    },
+    "classifier": {
+      "florence": 10,
+      "easyocr": 10,
+      "tesseract": 0
+    },
+    "spatial_prior": 27,
+    "union": 30,
+    "shipped": "32/35 (MIDI-scorer OCR-legibility; not recomputed this session, cited from RESULTS.md)",
+    "shipped_margin": "33/35 (MIDI-scorer OCR-legibility; geometry-removal on clean also = 33/35 this run)",
+    "clean_removal_geometry": {
+      "florence": 33,
+      "easyocr": 31,
+      "tesseract": 12
+    },
+    "mcnemar_detection": {
+      "b": 2,
+      "c": 1,
+      "exact_p": 1.0,
+      "midp": 0.625
+    },
+    "mcnemar_classifier": {
+      "b": 0,
+      "c": 0,
+      "exact_p": 1.0,
+      "midp": 1.0
+    },
+    "pseudophi": {
+      "florence_det": 6,
+      "easyocr_det": 6,
+      "florence_clf": 4,
+      "easyocr_clf": 4,
+      "n": 6
+    },
+    "frontier": {
+      "retain": 97.58,
+      "strict": 86.69,
+      "ctp_default": 46.75,
+      "note": "series accuracy from RESULTS.md; not recomputed this session (full-benchmark run)"
+    },
+    "drift_flags": []
+  },
+  "stats": [
+    {
+      "comparison": "clean/detection/florence",
+      "n": 35,
+      "k": 34,
+      "fraction": 0.9714,
+      "wilson_lo": 85.5,
+      "wilson_hi": 99.5,
+      "paired": null
+    },
+    {
+      "comparison": "clean/detection/easyocr",
+      "n": 35,
+      "k": 33,
+      "fraction": 0.9429,
+      "wilson_lo": 81.4,
+      "wilson_hi": 98.4,
+      "paired": {
+        "b": 2,
+        "c": 1,
+        "midp": 0.625,
+        "exact_binom_p": 1.0
+      }
+    },
+    {
+      "comparison": "clean/detection/tesseract",
+      "n": 35,
+      "k": 11,
+      "fraction": 0.3143,
+      "wilson_lo": 18.6,
+      "wilson_hi": 48.0,
+      "paired": null
+    },
+    {
+      "comparison": "clean/classifier/florence",
+      "n": 35,
+      "k": 10,
+      "fraction": 0.2857,
+      "wilson_lo": 16.3,
+      "wilson_hi": 45.1,
+      "paired": null
+    },
+    {
+      "comparison": "clean/classifier/easyocr",
+      "n": 35,
+      "k": 10,
+      "fraction": 0.2857,
+      "wilson_lo": 16.3,
+      "wilson_hi": 45.1,
+      "paired": {
+        "b": 0,
+        "c": 0,
+        "midp": 1.0,
+        "exact_binom_p": 1.0
+      }
+    },
+    {
+      "comparison": "clean/classifier/tesseract",
+      "n": 35,
+      "k": 0,
+      "fraction": 0.0,
+      "wilson_lo": 0,
+      "wilson_hi": 9.9,
+      "paired": null
+    },
+    {
+      "comparison": "clean/spatial_prior/florence",
+      "n": 35,
+      "k": 27,
+      "fraction": 0.7714,
+      "wilson_lo": 61.0,
+      "wilson_hi": 87.9,
+      "paired": null
+    },
+    {
+      "comparison": "clean/layered_union/florence",
+      "n": 35,
+      "k": 30,
+      "fraction": 0.8571,
+      "wilson_lo": 70.6,
+      "wilson_hi": 93.7,
+      "paired": null
+    },
+    {
+      "comparison": "clean/removal/florence",
+      "n": 35,
+      "k": 33,
+      "fraction": 0.9429,
+      "wilson_lo": 81.4,
+      "wilson_hi": 98.4,
+      "paired": null
+    },
+    {
+      "comparison": "clean/removal/easyocr",
+      "n": 35,
+      "k": 31,
+      "fraction": 0.8857,
+      "wilson_lo": 74.0,
+      "wilson_hi": 95.5,
+      "paired": {
+        "b": 2,
+        "c": 0,
+        "midp": 0.25,
+        "exact_binom_p": 0.5
+      }
+    },
+    {
+      "comparison": "clean/removal/tesseract",
+      "n": 35,
+      "k": 12,
+      "fraction": 0.3429,
+      "wilson_lo": 20.8,
+      "wilson_hi": 50.8,
+      "paired": null
+    },
+    {
+      "comparison": "clean/detection/florence",
+      "n": 35,
+      "k": 34,
+      "fraction": 0.9714,
+      "wilson_lo": 85.5,
+      "wilson_hi": 99.5,
+      "paired": null
+    },
+    {
+      "comparison": "clean/detection/easyocr",
+      "n": 35,
+      "k": 33,
+      "fraction": 0.9429,
+      "wilson_lo": 81.4,
+      "wilson_hi": 98.4,
+      "paired": null
+    },
+    {
+      "comparison": "clean/detection/tesseract",
+      "n": 35,
+      "k": 11,
+      "fraction": 0.3143,
+      "wilson_lo": 18.6,
+      "wilson_hi": 48.0,
+      "paired": null
+    },
+    {
+      "comparison": "blur_2/removal/florence",
+      "n": 35,
+      "k": 32,
+      "fraction": 0.9143,
+      "wilson_lo": 77.6,
+      "wilson_hi": 97.0,
+      "paired": null
+    },
+    {
+      "comparison": "blur_2/removal/easyocr",
+      "n": 35,
+      "k": 29,
+      "fraction": 0.8286,
+      "wilson_lo": 67.3,
+      "wilson_hi": 91.9,
+      "paired": {
+        "b": 3,
+        "c": 0,
+        "midp": 0.125,
+        "exact_binom_p": 0.25
+      }
+    },
+    {
+      "comparison": "blur_2/removal/tesseract",
+      "n": 35,
+      "k": 7,
+      "fraction": 0.2,
+      "wilson_lo": 10.0,
+      "wilson_hi": 35.9,
+      "paired": null
+    },
+    {
+      "comparison": "blur_2/detection/florence",
+      "n": 35,
+      "k": 33,
+      "fraction": 0.9429,
+      "wilson_lo": 81.4,
+      "wilson_hi": 98.4,
+      "paired": null
+    },
+    {
+      "comparison": "blur_2/detection/easyocr",
+      "n": 35,
+      "k": 31,
+      "fraction": 0.8857,
+      "wilson_lo": 74.0,
+      "wilson_hi": 95.5,
+      "paired": null
+    },
+    {
+      "comparison": "blur_2/detection/tesseract",
+      "n": 35,
+      "k": 7,
+      "fraction": 0.2,
+      "wilson_lo": 10.0,
+      "wilson_hi": 35.9,
+      "paired": null
+    },
+    {
+      "comparison": "blur_4/removal/florence",
+      "n": 35,
+      "k": 32,
+      "fraction": 0.9143,
+      "wilson_lo": 77.6,
+      "wilson_hi": 97.0,
+      "paired": null
+    },
+    {
+      "comparison": "blur_4/removal/easyocr",
+      "n": 35,
+      "k": 18,
+      "fraction": 0.5143,
+      "wilson_lo": 35.6,
+      "wilson_hi": 67.0,
+      "paired": {
+        "b": 14,
+        "c": 0,
+        "midp": 0.0001,
+        "exact_binom_p": 0.0001
+      }
+    },
+    {
+      "comparison": "blur_4/removal/tesseract",
+      "n": 35,
+      "k": 4,
+      "fraction": 0.1143,
+      "wilson_lo": 4.5,
+      "wilson_hi": 26.0,
+      "paired": null
+    },
+    {
+      "comparison": "blur_4/detection/florence",
+      "n": 35,
+      "k": 34,
+      "fraction": 0.9714,
+      "wilson_lo": 85.5,
+      "wilson_hi": 99.5,
+      "paired": null
+    },
+    {
+      "comparison": "blur_4/detection/easyocr",
+      "n": 35,
+      "k": 25,
+      "fraction": 0.7143,
+      "wilson_lo": 54.9,
+      "wilson_hi": 83.7,
+      "paired": null
+    },
+    {
+      "comparison": "blur_4/detection/tesseract",
+      "n": 35,
+      "k": 6,
+      "fraction": 0.1714,
+      "wilson_lo": 8.1,
+      "wilson_hi": 32.7,
+      "paired": null
+    },
+    {
+      "comparison": "noise_20/removal/florence",
+      "n": 35,
+      "k": 31,
+      "fraction": 0.8857,
+      "wilson_lo": 74.0,
+      "wilson_hi": 95.5,
+      "paired": null
+    },
+    {
+      "comparison": "noise_20/removal/easyocr",
+      "n": 35,
+      "k": 29,
+      "fraction": 0.8286,
+      "wilson_lo": 67.3,
+      "wilson_hi": 91.9,
+      "paired": {
+        "b": 3,
+        "c": 1,
+        "midp": 0.375,
+        "exact_binom_p": 0.625
+      }
+    },
+    {
+      "comparison": "noise_20/removal/tesseract",
+      "n": 35,
+      "k": 7,
+      "fraction": 0.2,
+      "wilson_lo": 10.0,
+      "wilson_hi": 35.9,
+      "paired": null
+    },
+    {
+      "comparison": "noise_20/detection/florence",
+      "n": 35,
+      "k": 32,
+      "fraction": 0.9143,
+      "wilson_lo": 77.6,
+      "wilson_hi": 97.0,
+      "paired": null
+    },
+    {
+      "comparison": "noise_20/detection/easyocr",
+      "n": 35,
+      "k": 31,
+      "fraction": 0.8857,
+      "wilson_lo": 74.0,
+      "wilson_hi": 95.5,
+      "paired": null
+    },
+    {
+      "comparison": "noise_20/detection/tesseract",
+      "n": 35,
+      "k": 6,
+      "fraction": 0.1714,
+      "wilson_lo": 8.1,
+      "wilson_hi": 32.7,
+      "paired": null
+    },
+    {
+      "comparison": "noise_40/removal/florence",
+      "n": 35,
+      "k": 32,
+      "fraction": 0.9143,
+      "wilson_lo": 77.6,
+      "wilson_hi": 97.0,
+      "paired": null
+    },
+    {
+      "comparison": "noise_40/removal/easyocr",
+      "n": 35,
+      "k": 28,
+      "fraction": 0.8,
+      "wilson_lo": 64.1,
+      "wilson_hi": 90.0,
+      "paired": {
+        "b": 5,
+        "c": 1,
+        "midp": 0.125,
+        "exact_binom_p": 0.2188
+      }
+    },
+    {
+      "comparison": "noise_40/removal/tesseract",
+      "n": 35,
+      "k": 6,
+      "fraction": 0.1714,
+      "wilson_lo": 8.1,
+      "wilson_hi": 32.7,
+      "paired": null
+    },
+    {
+      "comparison": "noise_40/detection/florence",
+      "n": 35,
+      "k": 33,
+      "fraction": 0.9429,
+      "wilson_lo": 81.4,
+      "wilson_hi": 98.4,
+      "paired": null
+    },
+    {
+      "comparison": "noise_40/detection/easyocr",
+      "n": 35,
+      "k": 30,
+      "fraction": 0.8571,
+      "wilson_lo": 70.6,
+      "wilson_hi": 93.7,
+      "paired": null
+    },
+    {
+      "comparison": "noise_40/detection/tesseract",
+      "n": 35,
+      "k": 5,
+      "fraction": 0.1429,
+      "wilson_lo": 6.3,
+      "wilson_hi": 29.4,
+      "paired": null
+    },
+    {
+      "comparison": "contrast_0.5/removal/florence",
+      "n": 35,
+      "k": 32,
+      "fraction": 0.9143,
+      "wilson_lo": 77.6,
+      "wilson_hi": 97.0,
+      "paired": null
+    },
+    {
+      "comparison": "contrast_0.5/removal/easyocr",
+      "n": 35,
+      "k": 30,
+      "fraction": 0.8571,
+      "wilson_lo": 70.6,
+      "wilson_hi": 93.7,
+      "paired": {
+        "b": 3,
+        "c": 1,
+        "midp": 0.375,
+        "exact_binom_p": 0.625
+      }
+    },
+    {
+      "comparison": "contrast_0.5/removal/tesseract",
+      "n": 35,
+      "k": 12,
+      "fraction": 0.3429,
+      "wilson_lo": 20.8,
+      "wilson_hi": 50.8,
+      "paired": null
+    },
+    {
+      "comparison": "contrast_0.5/detection/florence",
+      "n": 35,
+      "k": 33,
+      "fraction": 0.9429,
+      "wilson_lo": 81.4,
+      "wilson_hi": 98.4,
+      "paired": null
+    },
+    {
+      "comparison": "contrast_0.5/detection/easyocr",
+      "n": 35,
+      "k": 33,
+      "fraction": 0.9429,
+      "wilson_lo": 81.4,
+      "wilson_hi": 98.4,
+      "paired": null
+    },
+    {
+      "comparison": "contrast_0.5/detection/tesseract",
+      "n": 35,
+      "k": 11,
+      "fraction": 0.3143,
+      "wilson_lo": 18.6,
+      "wilson_hi": 48.0,
+      "paired": null
+    },
+    {
+      "comparison": "contrast_0.3/removal/florence",
+      "n": 35,
+      "k": 32,
+      "fraction": 0.9143,
+      "wilson_lo": 77.6,
+      "wilson_hi": 97.0,
+      "paired": null
+    },
+    {
+      "comparison": "contrast_0.3/removal/easyocr",
+      "n": 35,
+      "k": 27,
+      "fraction": 0.7714,
+      "wilson_lo": 61.0,
+      "wilson_hi": 87.9,
+      "paired": {
+        "b": 6,
+        "c": 1,
+        "midp": 0.0703,
+        "exact_binom_p": 0.125
+      }
+    },
+    {
+      "comparison": "contrast_0.3/removal/tesseract",
+      "n": 35,
+      "k": 14,
+      "fraction": 0.4,
+      "wilson_lo": 25.6,
+      "wilson_hi": 56.4,
+      "paired": null
+    },
+    {
+      "comparison": "contrast_0.3/detection/florence",
+      "n": 35,
+      "k": 33,
+      "fraction": 0.9429,
+      "wilson_lo": 81.4,
+      "wilson_hi": 98.4,
+      "paired": null
+    },
+    {
+      "comparison": "contrast_0.3/detection/easyocr",
+      "n": 35,
+      "k": 29,
+      "fraction": 0.8286,
+      "wilson_lo": 67.3,
+      "wilson_hi": 91.9,
+      "paired": null
+    },
+    {
+      "comparison": "contrast_0.3/detection/tesseract",
+      "n": 35,
+      "k": 13,
+      "fraction": 0.3714,
+      "wilson_lo": 23.2,
+      "wilson_hi": 53.7,
+      "paired": null
+    },
+    {
+      "comparison": "downscale_0.5/removal/florence",
+      "n": 35,
+      "k": 32,
+      "fraction": 0.9143,
+      "wilson_lo": 77.6,
+      "wilson_hi": 97.0,
+      "paired": null
+    },
+    {
+      "comparison": "downscale_0.5/removal/easyocr",
+      "n": 35,
+      "k": 31,
+      "fraction": 0.8857,
+      "wilson_lo": 74.0,
+      "wilson_hi": 95.5,
+      "paired": {
+        "b": 2,
+        "c": 1,
+        "midp": 0.625,
+        "exact_binom_p": 1.0
+      }
+    },
+    {
+      "comparison": "downscale_0.5/removal/tesseract",
+      "n": 35,
+      "k": 11,
+      "fraction": 0.3143,
+      "wilson_lo": 18.6,
+      "wilson_hi": 48.0,
+      "paired": null
+    },
+    {
+      "comparison": "downscale_0.5/detection/florence",
+      "n": 35,
+      "k": 33,
+      "fraction": 0.9429,
+      "wilson_lo": 81.4,
+      "wilson_hi": 98.4,
+      "paired": null
+    },
+    {
+      "comparison": "downscale_0.5/detection/easyocr",
+      "n": 35,
+      "k": 33,
+      "fraction": 0.9429,
+      "wilson_lo": 81.4,
+      "wilson_hi": 98.4,
+      "paired": null
+    },
+    {
+      "comparison": "downscale_0.5/detection/tesseract",
+      "n": 35,
+      "k": 10,
+      "fraction": 0.2857,
+      "wilson_lo": 16.3,
+      "wilson_hi": 45.1,
+      "paired": null
+    },
+    {
+      "comparison": "downscale_0.33/removal/florence",
+      "n": 35,
+      "k": 32,
+      "fraction": 0.9143,
+      "wilson_lo": 77.6,
+      "wilson_hi": 97.0,
+      "paired": null
+    },
+    {
+      "comparison": "downscale_0.33/removal/easyocr",
+      "n": 35,
+      "k": 31,
+      "fraction": 0.8857,
+      "wilson_lo": 74.0,
+      "wilson_hi": 95.5,
+      "paired": {
+        "b": 2,
+        "c": 1,
+        "midp": 0.625,
+        "exact_binom_p": 1.0
+      }
+    },
+    {
+      "comparison": "downscale_0.33/removal/tesseract",
+      "n": 35,
+      "k": 8,
+      "fraction": 0.2286,
+      "wilson_lo": 12.1,
+      "wilson_hi": 39.0,
+      "paired": null
+    },
+    {
+      "comparison": "downscale_0.33/detection/florence",
+      "n": 35,
+      "k": 33,
+      "fraction": 0.9429,
+      "wilson_lo": 81.4,
+      "wilson_hi": 98.4,
+      "paired": null
+    },
+    {
+      "comparison": "downscale_0.33/detection/easyocr",
+      "n": 35,
+      "k": 33,
+      "fraction": 0.9429,
+      "wilson_lo": 81.4,
+      "wilson_hi": 98.4,
+      "paired": null
+    },
+    {
+      "comparison": "downscale_0.33/detection/tesseract",
+      "n": 35,
+      "k": 7,
+      "fraction": 0.2,
+      "wilson_lo": 10.0,
+      "wilson_hi": 35.9,
+      "paired": null
+    },
+    {
+      "comparison": "pseudophi/detection/florence",
+      "n": 6,
+      "k": 6,
+      "fraction": 1.0,
+      "wilson_lo": 61.0,
+      "wilson_hi": 100.0,
+      "paired": null
+    },
+    {
+      "comparison": "pseudophi/detection/easyocr",
+      "n": 6,
+      "k": 6,
+      "fraction": 1.0,
+      "wilson_lo": 61.0,
+      "wilson_hi": 100.0,
+      "paired": null
+    },
+    {
+      "comparison": "pseudophi/classifier/florence",
+      "n": 6,
+      "k": 4,
+      "fraction": 0.6667,
+      "wilson_lo": 30.0,
+      "wilson_hi": 90.3,
+      "paired": null
+    },
+    {
+      "comparison": "pseudophi/classifier/easyocr",
+      "n": 6,
+      "k": 4,
+      "fraction": 0.6667,
+      "wilson_lo": 30.0,
+      "wilson_hi": 90.3,
+      "paired": null
+    },
+    {
+      "comparison": "margin/val/off",
+      "n": 35,
+      "k": 32,
+      "fraction": 0.9143,
+      "wilson_lo": 77.6,
+      "wilson_hi": 97.0,
+      "paired": null
+    },
+    {
+      "comparison": "margin/val/on",
+      "n": 35,
+      "k": 33,
+      "fraction": 0.9429,
+      "wilson_lo": 81.4,
+      "wilson_hi": 98.4,
+      "paired": null
+    },
+    {
+      "comparison": "margin/test/off",
+      "n": 27,
+      "k": 23,
+      "fraction": 0.8519,
+      "wilson_lo": 67.5,
+      "wilson_hi": 94.1,
+      "paired": null
+    },
+    {
+      "comparison": "margin/test/on",
+      "n": 27,
+      "k": 25,
+      "fraction": 0.9259,
+      "wilson_lo": 76.6,
+      "wilson_hi": 97.9,
+      "paired": null
+    },
+    {
+      "comparison": "frontier/retain",
+      "n": 117669,
+      "k": 114821,
+      "fraction": 0.9758,
+      "wilson_lo": 97.5,
+      "wilson_hi": 97.7,
+      "paired": null
+    },
+    {
+      "comparison": "frontier/strict",
+      "n": 117669,
+      "k": 102007,
+      "fraction": 0.8669,
+      "wilson_lo": 86.5,
+      "wilson_hi": 86.9,
+      "paired": null
+    },
+    {
+      "comparison": "frontier/ctp_default",
+      "n": 117669,
+      "k": 55010,
+      "fraction": 0.4675,
+      "wilson_lo": 46.5,
+      "wilson_hi": 47.0,
+      "paired": null
+    }
+  ],
+  "degradation_end_to_end": [
+    {
+      "engine": "florence",
+      "condition": "clean",
+      "removal_recall_k": 33,
+      "n": 35,
+      "wilson_lo": 81.4,
+      "wilson_hi": 98.4,
+      "detection_recall_k": 34
+    },
+    {
+      "engine": "florence",
+      "condition": "blur_2",
+      "removal_recall_k": 32,
+      "n": 35,
+      "wilson_lo": 77.6,
+      "wilson_hi": 97.0,
+      "detection_recall_k": 33
+    },
+    {
+      "engine": "florence",
+      "condition": "blur_4",
+      "removal_recall_k": 32,
+      "n": 35,
+      "wilson_lo": 77.6,
+      "wilson_hi": 97.0,
+      "detection_recall_k": 34
+    },
+    {
+      "engine": "florence",
+      "condition": "noise_20",
+      "removal_recall_k": 31,
+      "n": 35,
+      "wilson_lo": 74.0,
+      "wilson_hi": 95.5,
+      "detection_recall_k": 32
+    },
+    {
+      "engine": "florence",
+      "condition": "noise_40",
+      "removal_recall_k": 32,
+      "n": 35,
+      "wilson_lo": 77.6,
+      "wilson_hi": 97.0,
+      "detection_recall_k": 33
+    },
+    {
+      "engine": "florence",
+      "condition": "contrast_0.5",
+      "removal_recall_k": 32,
+      "n": 35,
+      "wilson_lo": 77.6,
+      "wilson_hi": 97.0,
+      "detection_recall_k": 33
+    },
+    {
+      "engine": "florence",
+      "condition": "contrast_0.3",
+      "removal_recall_k": 32,
+      "n": 35,
+      "wilson_lo": 77.6,
+      "wilson_hi": 97.0,
+      "detection_recall_k": 33
+    },
+    {
+      "engine": "florence",
+      "condition": "downscale_0.5",
+      "removal_recall_k": 32,
+      "n": 35,
+      "wilson_lo": 77.6,
+      "wilson_hi": 97.0,
+      "detection_recall_k": 33
+    },
+    {
+      "engine": "florence",
+      "condition": "downscale_0.33",
+      "removal_recall_k": 32,
+      "n": 35,
+      "wilson_lo": 77.6,
+      "wilson_hi": 97.0,
+      "detection_recall_k": 33
+    },
+    {
+      "engine": "easyocr",
+      "condition": "clean",
+      "removal_recall_k": 31,
+      "n": 35,
+      "wilson_lo": 74.0,
+      "wilson_hi": 95.5,
+      "detection_recall_k": 33
+    },
+    {
+      "engine": "easyocr",
+      "condition": "blur_2",
+      "removal_recall_k": 29,
+      "n": 35,
+      "wilson_lo": 67.3,
+      "wilson_hi": 91.9,
+      "detection_recall_k": 31
+    },
+    {
+      "engine": "easyocr",
+      "condition": "blur_4",
+      "removal_recall_k": 18,
+      "n": 35,
+      "wilson_lo": 35.6,
+      "wilson_hi": 67.0,
+      "detection_recall_k": 25
+    },
+    {
+      "engine": "easyocr",
+      "condition": "noise_20",
+      "removal_recall_k": 29,
+      "n": 35,
+      "wilson_lo": 67.3,
+      "wilson_hi": 91.9,
+      "detection_recall_k": 31
+    },
+    {
+      "engine": "easyocr",
+      "condition": "noise_40",
+      "removal_recall_k": 28,
+      "n": 35,
+      "wilson_lo": 64.1,
+      "wilson_hi": 90.0,
+      "detection_recall_k": 30
+    },
+    {
+      "engine": "easyocr",
+      "condition": "contrast_0.5",
+      "removal_recall_k": 30,
+      "n": 35,
+      "wilson_lo": 70.6,
+      "wilson_hi": 93.7,
+      "detection_recall_k": 33
+    },
+    {
+      "engine": "easyocr",
+      "condition": "contrast_0.3",
+      "removal_recall_k": 27,
+      "n": 35,
+      "wilson_lo": 61.0,
+      "wilson_hi": 87.9,
+      "detection_recall_k": 29
+    },
+    {
+      "engine": "easyocr",
+      "condition": "downscale_0.5",
+      "removal_recall_k": 31,
+      "n": 35,
+      "wilson_lo": 74.0,
+      "wilson_hi": 95.5,
+      "detection_recall_k": 33
+    },
+    {
+      "engine": "easyocr",
+      "condition": "downscale_0.33",
+      "removal_recall_k": 31,
+      "n": 35,
+      "wilson_lo": 74.0,
+      "wilson_hi": 95.5,
+      "detection_recall_k": 33
+    },
+    {
+      "engine": "tesseract",
+      "condition": "clean",
+      "removal_recall_k": 12,
+      "n": 35,
+      "wilson_lo": 20.8,
+      "wilson_hi": 50.8,
+      "detection_recall_k": 11
+    },
+    {
+      "engine": "tesseract",
+      "condition": "blur_2",
+      "removal_recall_k": 7,
+      "n": 35,
+      "wilson_lo": 10.0,
+      "wilson_hi": 35.9,
+      "detection_recall_k": 7
+    },
+    {
+      "engine": "tesseract",
+      "condition": "blur_4",
+      "removal_recall_k": 4,
+      "n": 35,
+      "wilson_lo": 4.5,
+      "wilson_hi": 26.0,
+      "detection_recall_k": 6
+    },
+    {
+      "engine": "tesseract",
+      "condition": "noise_20",
+      "removal_recall_k": 7,
+      "n": 35,
+      "wilson_lo": 10.0,
+      "wilson_hi": 35.9,
+      "detection_recall_k": 6
+    },
+    {
+      "engine": "tesseract",
+      "condition": "noise_40",
+      "removal_recall_k": 6,
+      "n": 35,
+      "wilson_lo": 8.1,
+      "wilson_hi": 32.7,
+      "detection_recall_k": 5
+    },
+    {
+      "engine": "tesseract",
+      "condition": "contrast_0.5",
+      "removal_recall_k": 12,
+      "n": 35,
+      "wilson_lo": 20.8,
+      "wilson_hi": 50.8,
+      "detection_recall_k": 11
+    },
+    {
+      "engine": "tesseract",
+      "condition": "contrast_0.3",
+      "removal_recall_k": 14,
+      "n": 35,
+      "wilson_lo": 25.6,
+      "wilson_hi": 56.4,
+      "detection_recall_k": 13
+    },
+    {
+      "engine": "tesseract",
+      "condition": "downscale_0.5",
+      "removal_recall_k": 11,
+      "n": 35,
+      "wilson_lo": 18.6,
+      "wilson_hi": 48.0,
+      "detection_recall_k": 10
+    },
+    {
+      "engine": "tesseract",
+      "condition": "downscale_0.33",
+      "removal_recall_k": 8,
+      "n": 35,
+      "wilson_lo": 12.1,
+      "wilson_hi": 39.0,
+      "detection_recall_k": 7
+    }
+  ],
+  "blur_paired": {
+    "condition": "blur_r4",
+    "florence": {
+      "k": 32,
+      "n": 35
+    },
+    "easyocr": {
+      "k": 18,
+      "n": 35
+    },
+    "delta": 14,
+    "b": 14,
+    "c": 0,
+    "midp": 0.0001,
+    "exact_binom_p": 0.0001,
+    "florence_detection_k": 34,
+    "easyocr_detection_k": 25
+  },
+  "held_out_manufacturer": {
+    "regions": [
+      {
+        "region_id": "716256474805",
+        "manufacturer": "(empty)",
+        "model": "(empty)",
+        "modality": "DX",
+        "match_type": "default",
+        "in_fitting_set": false
+      },
+      {
+        "region_id": "362842879575",
+        "manufacturer": "Agfa",
+        "model": "CR 85",
+        "modality": "CR",
+        "match_type": "default",
+        "in_fitting_set": false
+      },
+      {
+        "region_id": "833728400993",
+        "manufacturer": "(empty)",
+        "model": "(empty)",
+        "modality": "MG",
+        "match_type": "default",
+        "in_fitting_set": false
+      },
+      {
+        "region_id": "074005301483",
+        "manufacturer": "(empty)",
+        "model": "(empty)",
+        "modality": "CR",
+        "match_type": "default",
+        "in_fitting_set": false
+      },
+      {
+        "region_id": "319609092977",
+        "manufacturer": "(empty)",
+        "model": "(empty)",
+        "modality": "DX",
+        "match_type": "default",
+        "in_fitting_set": false
+      },
+      {
+        "region_id": "614069354479",
+        "manufacturer": "(empty)",
+        "model": "(empty)",
+        "modality": "DX",
+        "match_type": "default",
+        "in_fitting_set": false
+      },
+      {
+        "region_id": "911417401750",
+        "manufacturer": "(empty)",
+        "model": "(empty)",
+        "modality": "DX",
+        "match_type": "default",
+        "in_fitting_set": false
+      },
+      {
+        "region_id": "835666073014",
+        "manufacturer": "Agfa",
+        "model": "CR 85",
+        "modality": "CR",
+        "match_type": "default",
+        "in_fitting_set": false
+      },
+      {
+        "region_id": "781489212774",
+        "manufacturer": "(empty)",
+        "model": "(empty)",
+        "modality": "DX",
+        "match_type": "default",
+        "in_fitting_set": false
+      },
+      {
+        "region_id": "451078003215",
+        "manufacturer": "(empty)",
+        "model": "(empty)",
+        "modality": "DX",
+        "match_type": "default",
+        "in_fitting_set": false
+      },
+      {
+        "region_id": "305722605682",
+        "manufacturer": "GE Healthcare",
+        "model": "WDR1",
+        "modality": "CR",
+        "match_type": "default",
+        "in_fitting_set": false
+      },
+      {
+        "region_id": "290376484277",
+        "manufacturer": "GE Healthcare",
+        "model": "WDR1",
+        "modality": "CR",
+        "match_type": "default",
+        "in_fitting_set": false
+      },
+      {
+        "region_id": "997177780656",
+        "manufacturer": "Philips Medical Systems",
+        "model": "MobileDiagnost wDR",
+        "modality": "DX",
+        "match_type": "partial",
+        "in_fitting_set": true
+      },
+      {
+        "region_id": "624481324435",
+        "manufacturer": "(empty)",
+        "model": "(empty)",
+        "modality": "DX",
+        "match_type": "default",
+        "in_fitting_set": false
+      },
+      {
+        "region_id": "689061909788",
+        "manufacturer": "(empty)",
+        "model": "(empty)",
+        "modality": "DX",
+        "match_type": "default",
+        "in_fitting_set": false
+      },
+      {
+        "region_id": "417419110083",
+        "manufacturer": "Agfa",
+        "model": "CR 85",
+        "modality": "CR",
+        "match_type": "default",
+        "in_fitting_set": false
+      },
+      {
+        "region_id": "238639898325",
+        "manufacturer": "SIEMENS",
+        "model": "SIEMENS FD-X",
+        "modality": "CR",
+        "match_type": "default",
+        "in_fitting_set": false
+      },
+      {
+        "region_id": "835651397269",
+        "manufacturer": "(empty)",
+        "model": "(empty)",
+        "modality": "DX",
+        "match_type": "default",
+        "in_fitting_set": false
+      },
+      {
+        "region_id": "331710067416",
+        "manufacturer": "(empty)",
+        "model": "(empty)",
+        "modality": "CR",
+        "match_type": "default",
+        "in_fitting_set": false
+      },
+      {
+        "region_id": "616767305824",
+        "manufacturer": "(empty)",
+        "model": "(empty)",
+        "modality": "CR",
+        "match_type": "default",
+        "in_fitting_set": false
+      },
+      {
+        "region_id": "956237445846",
+        "manufacturer": "GE Healthcare",
+        "model": "Discovery XR656",
+        "modality": "CR",
+        "match_type": "default",
+        "in_fitting_set": false
+      },
+      {
+        "region_id": "556010286609",
+        "manufacturer": "GE Healthcare",
+        "model": "Discovery XR656",
+        "modality": "CR",
+        "match_type": "default",
+        "in_fitting_set": false
+      },
+      {
+        "region_id": "064467816509",
+        "manufacturer": "(empty)",
+        "model": "(empty)",
+        "modality": "MG",
+        "match_type": "default",
+        "in_fitting_set": false
+      },
+      {
+        "region_id": "789442889829",
+        "manufacturer": "(empty)",
+        "model": "(empty)",
+        "modality": "DX",
+        "match_type": "default",
+        "in_fitting_set": false
+      },
+      {
+        "region_id": "066088514757",
+        "manufacturer": "(empty)",
+        "model": "(empty)",
+        "modality": "DX",
+        "match_type": "default",
+        "in_fitting_set": false
+      },
+      {
+        "region_id": "906251043210",
+        "manufacturer": "(empty)",
+        "model": "(empty)",
+        "modality": "DX",
+        "match_type": "default",
+        "in_fitting_set": false
+      },
+      {
+        "region_id": "506288587657",
+        "manufacturer": "Philips Medical Systems",
+        "model": "MobileDiagnost wDR",
+        "modality": "DX",
+        "match_type": "partial",
+        "in_fitting_set": true
+      },
+      {
+        "region_id": "159253623881",
+        "manufacturer": "Philips Medical Systems",
+        "model": "MobileDiagnost wDR",
+        "modality": "CR",
+        "match_type": "partial",
+        "in_fitting_set": true
+      },
+      {
+        "region_id": "721173080649",
+        "manufacturer": "Philips Medical Systems",
+        "model": "MobileDiagnost wDR",
+        "modality": "CR",
+        "match_type": "partial",
+        "in_fitting_set": true
+      },
+      {
+        "region_id": "658653005752",
+        "manufacturer": "GE MEDICAL SYSTEMS",
+        "model": "Revolution XQi ADS_28.4",
+        "modality": "DX",
+        "match_type": "default",
+        "in_fitting_set": false
+      },
+      {
+        "region_id": "091070367478",
+        "manufacturer": "GE MEDICAL SYSTEMS",
+        "model": "Revolution XQi ADS_28.4",
+        "modality": "DX",
+        "match_type": "default",
+        "in_fitting_set": false
+      },
+      {
+        "region_id": "931926602130",
+        "manufacturer": "LORAD",
+        "model": "Lorad Selenia",
+        "modality": "MG",
+        "match_type": "default",
+        "in_fitting_set": false
+      },
+      {
+        "region_id": "535929157929",
+        "manufacturer": "Agfa",
+        "model": "CR 85",
+        "modality": "CR",
+        "match_type": "default",
+        "in_fitting_set": false
+      },
+      {
+        "region_id": "140911593291",
+        "manufacturer": "(empty)",
+        "model": "(empty)",
+        "modality": "DX",
+        "match_type": "default",
+        "in_fitting_set": false
+      },
+      {
+        "region_id": "361903962159",
+        "manufacturer": "(empty)",
+        "model": "(empty)",
+        "modality": "DX",
+        "match_type": "default",
+        "in_fitting_set": false
+      }
+    ],
+    "fitting_population": [
+      "Philips Medical Systems"
+    ],
+    "seen_n": 4,
+    "heldout_n": 31,
+    "heldout_recall": {
+      "k": 24,
+      "n": 31,
+      "wilson_lo": 60.2,
+      "wilson_hi": 88.6,
+      "seen_spatial": "3/4",
+      "spatial_hits_total": 27,
+      "spatial_from_default_fallback": 24,
+      "spatial_from_manufacturer_catalogue": 3,
+      "regions_with_empty_manufacturer": 19
+    }
+  },
+  "verdicts": {
+    "robustness_carries_to_removal": "yes (conditional on image quality) + On clean images the two engines TIE on removal (33 vs 31/35, delta 2), so the clean-data thesis holds: perception is at ceiling and the decision layer is the bottleneck. Under heavy blur (r4) the advantage is LARGE and significant: removal Florence 32 vs EasyOCR 18/35 (delta 14, McNemar b=14 c=0 exact p=0.0001), tracking the detection gap (34 vs 25). Florence end-to-end removal is degradation-ROBUST across all 9 conditions (range 31-33/35); EasyOCR removal collapses under heavy blur (range 18-31/35). Mechanism: the pipeline is detection-gated, so burned-in text the weaker engine fails to READ under blur can never be redacted downstream. This refines (does not contradict) the clean-data claim and answers why a VLM: it extends the ceiling-perception regime to degraded images, where robustness carries all the way to PHI removal.",
+    "prior_generalizes": "yes-via-generic-fallback (NOT via the manufacturer catalogue) + Only 4/35 GT regions match a catalogued vendor (Philips Medical Systems, partial matches), and 19/35 have an EMPTY Manufacturer tag; the remaining 31/35 are held-out (match_type default/none). Of the spatial prior's 27/35 total hits, 24 come from the GENERIC default-strip fallback (top/bottom 15%, left/right 20%) and only 3 from the proprietary manufacturer catalogue. So the prior DOES generalize to unseen/untagged vendors (held-out recall 24/31, Wilson 60.2-88.6%), but that generalization is carried by the generic margin heuristic, not vendor-specific zones. Honest qualification of the 'manufacturer spatial prior' framing: on MIDI-B burned-in data it is effectively a generic margin/strip prior with a small (3/27) manufacturer-specific component."
+  },
+  "reproducibility_artifacts": [
+    "docs/reproducibility/classifier_schema.md",
+    "docs/reproducibility/spatial_prior_schema.md",
+    "docs/reproducibility/salt_note.md",
+    "docs/reproducibility/CLAIM_checklist.md",
+    "docs/reproducibility/README.md"
+  ],
+  "configured_ctp": "pending_confirmation"
+}
