@@ -92,7 +92,11 @@ python reproduce/make_figures.py
 ```
 
 `results/revision_results.json` holds the full numbers (seed 0, coverage grid 200 at
-threshold 0.50, strict profile) for cross-checking.
+threshold 0.50, strict profile) for cross-checking. Note: this file is the log of the
+shipped (proprietary, catalogue-included) pipeline run, so its `spatial_prior` (27) and
+`union` (30) are the paper's Table 1 values; the clean-room harness in this repo, with the
+catalogue withheld, produces 28 and 31 for those two rows (see the table above). Detection,
+classifier, and removal match exactly in both.
 
 ## Method notes
 
