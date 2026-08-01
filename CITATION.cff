@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+message: "If you use this reproduction harness, please cite it."
+title: "palimpsest: Reproduction harness for burned-in PHI removal on the MIDI-B benchmark"
+type: software
+authors:
+  - family-names: "Patil"
+    given-names: "Digvijay"
+    orcid: "https://orcid.org/0009-0003-6878-1712"
+license: Apache-2.0
+repository-code: "https://github.com/Volkopat/palimpsest"
+version: "1.0.0"
+date-released: "2026-07-16"
+keywords:
+  - de-identification
+  - DICOM
+  - burned-in PHI
+  - MIDI-B
+  - vision-language model
+  - reproducibility
