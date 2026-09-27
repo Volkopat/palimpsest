@@ -35,7 +35,8 @@ Reproduces standalone from public MIDI-B + public Florence-2-base weights + this
 Two intermediate ablation rows in the paper's Table 1 are computed **with** the proprietary
 catalogue and therefore differ by one region when the catalogue is withheld: the "Spatial
 prior (margin plus catalogue)" row is 27/35 in the paper and **28/35** here (fallback only),
-and the "Layered union" row is 30/35 in the paper and **31/35** here. The generic fallback is
+and the "Classifier or spatial prior, before the margin rule" row (called "Layered union" in the
+submitted version) is 30/35 in the paper and **31/35** here. The generic fallback is
 marginally more aggressive than the catalogue on the single Philips image the catalogue
 handles. The headline detection, classifier, and removal numbers are unaffected (the extra
 region is already covered by the classifier or margin rule, so removal stays 33/35).
