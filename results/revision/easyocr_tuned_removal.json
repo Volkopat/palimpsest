@@ -1,0 +1,12 @@
+{
+ "clean/tuned-mag2-contrast": {
+  "detection_k": 29,
+  "removal_k": 25,
+  "n": 35
+ },
+ "blur_4/tuned-mag2-contrast": {
+  "detection_k": 33,
+  "removal_k": 21,
+  "n": 35
+ }
+}

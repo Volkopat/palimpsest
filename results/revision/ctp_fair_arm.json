@@ -1,0 +1,47 @@
+{
+ "_comment": "Fairly configured RSNA CTP arm (reviewer 2, major comment 5). CTP library classes driven headless by scripts/midi_benchmark/revision/ctp/CtpRun.java, DICOMPixelAnonymizer stage placed BEFORE DICOMAnonymizer (signature tags are blanked by the metadata profile). Scripts are CTP's own shipped files, not ours.",
+ "ctp_version_scripts": {
+  "metadata": "CTP/examples/example-ctp-dicom-anonymizer.script (1064 properties loaded)",
+  "pixel": "CTP/scripts/DicomPixelAnonymizer.script (52 signatures)"
+ },
+ "harness_controls": {
+  "positive": {
+   "desc": "real benchmark instance with SeriesDescription set to a catalogued value",
+   "pixApplied": 1
+  },
+  "negative": {
+   "desc": "same instance unmodified",
+   "pixNoSignature": 1
+  }
+ },
+ "ground_truth_burned_in_set": {
+  "instances": 35,
+  "ok": 35,
+  "fail": 0,
+  "pixApplied": 0,
+  "pixNoSignature": 35,
+  "burned_in_recall": "0/35"
+ },
+ "full_validation_split": {
+  "instances": 23921,
+  "ok": 23921,
+  "fail": 0,
+  "pixApplied": 143,
+  "pixNoSignature": 23778,
+  "pixFail": 0,
+  "matched_all": "US | GE Healthcare (143/143)"
+ },
+ "catalogue_composition": {
+  "total_signatures": 52,
+  "ultrasound": 29,
+  "cr_dr": 1,
+  "cr_dr_signature": "Manufacturer~Canon AND ManufacturerModelName~CXDI AND Rows==2592"
+ },
+ "ground_truth_set_composition": {
+  "DX": 18,
+  "CR": 14,
+  "MG": 3,
+  "no_Manufacturer_tag": 19,
+  "canon_devices": 0
+ }
+}

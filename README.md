@@ -40,6 +40,42 @@ marginally more aggressive than the catalogue on the single Philips image the ca
 handles. The headline detection, classifier, and removal numbers are unaffected (the extra
 region is already covered by the classifier or margin rule, so removal stays 33/35).
 
+## The R2 revision
+
+The revision round added seven measurements and two arms that did not exist in the first
+submission. The scripts that produced them are in `reproduce/revision/` and every number
+they produced is in `results/revision/`, as JSON, so any figure in the revised manuscript or
+its supplement can be checked here without running anything.
+
+Reproduces standalone from public inputs:
+
+| Result | Paper | Script |
+|---|---|---|
+| EasyOCR under tuned configurations, detection | Table S10 | `revision/rev2_easyocr_tuned.py` |
+| Rendering of the burned-in text (polarity, contrast, glyph height, skew) | Table S9 | `revision/rev2_glyph_geometry.py` |
+| DICOM IOD conformance, output and matched input control | Table S5 | `revision/rev2_conformance.py` |
+| Fairly configured RSNA CTP arm, pixel script enabled | Section 4.5 | `revision/ctp/CtpRun.java` |
+| The nine corruption conditions | Figure 3 | `revision/degrade_conditions.py` |
+
+Shipped as run, but needs the de-identification pipeline, which is withheld: policy-gate
+recall (Table S4), the ground-truth taxonomy and per-signal precision (Tables S2, S3, S7),
+transcription error rates (Table S6), the reverse arm (Table S8), the tuned-engine removal
+recall and the margin-floor diagnostic (Table S11), and the deployment footprint. These call
+into the product's classifier, its policy gate or its decision union. `reproduce/decision.py`
+and `reproduce/phi_classifier.py` are a clean-room implementation of the same specification
+(Supplementary Material A) and reproduce the clean detection, classifier and removal figures,
+but the revision scripts were **not** rewritten against it, because an unverified rewrite that
+silently produced different numbers would be worse than shipping none. See
+`reproduce/revision/README.md` for the per-script breakdown.
+
+The fairly configured CTP arm is worth singling out, because one detail decides whether it
+measures anything: CTP's pixel signatures match on `Manufacturer`, `ManufacturerModelName`,
+`SeriesDescription`, `ImageType` and exact `Rows`/`Columns`, and its metadata profile blanks
+several of those, so running the metadata stage first makes the pixel anonymizer appear never
+to fire. `CtpRun.java` places the pixel stage first, as CTP pipelines do, and the result was
+validated with a positive and a negative control. Both are recorded in
+`results/revision/ctp_fair_arm.json`.
+
 Needs the full proprietary pipeline (metadata de-identification + CBIIT scorer), not
 reproducible from this harness alone: the field-standard **series-accuracy frontier**
 (retain 97.58% / strict 86.69% / CTP-default 46.75%) and the shipped scorer-legibility

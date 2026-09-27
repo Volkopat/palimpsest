@@ -1,0 +1,1587 @@
+{
+ "input": {
+  "n_total": 23921,
+  "n_sampled": 200,
+  "instances_error_free": 2,
+  "iods": [
+   [
+    "PETImage",
+    61
+   ],
+   [
+    "(0x0009,0x10b2) SS IR Num Iterations  - Warning - Explicit value representation doesn't match data dictionary; Explicit <SL> Dictionary <SS>",
+    43
+   ],
+   [
+    "CTImage",
+    37
+   ],
+   [
+    "MRImage",
+    22
+   ],
+   [
+    "(0x0009,0x109d) SS Radial Filter 3D  - Warning - Explicit value representation doesn't match data dictionary; Explicit <SL> Dictionary <SS>",
+    17
+   ],
+   [
+    "(0x0019,0x109d) DT Pulse Sequence Date  - Warning - Explicit value representation doesn't match data dictionary; Explicit <SH> Dictionary <DT>",
+    10
+   ],
+   [
+    "(0x0027,0x1033) SL Imaging Options  - Warning - Explicit value representation doesn't match data dictionary; Explicit <UL> Dictionary <SL>",
+    3
+   ],
+   [
+    "SCImage",
+    3
+   ],
+   [
+    "(0x0099,0x000a) LO PrivateCreator  - Error - Bad private owner value - element must be greater than or equal to 0x0010",
+    2
+   ],
+   [
+    "DXImageForPresentation",
+    1
+   ],
+   [
+    "(0x0019,0x100f) SH Gradient Mode  - Warning - Explicit value representation doesn't match data dictionary; Explicit <LO> Dictionary <SH>",
+    1
+   ]
+  ],
+  "errors": [
+   [
+    "Error - Missing attribute Type 1C Conditional Element=<..> Module=<..>",
+    166
+   ],
+   [
+    "Error - Value invalid for this VR - (tag) - Leading zeroes in embedded numeric component(s)",
+    163
+   ],
+   [
+    "Error - Missing attribute Type 2C Conditional Element=<..> Module=<..>",
+    142
+   ],
+   [
+    "Error - Shall not be present when PatientOrientationCodeSequence is present - attribute <PatientPosition>",
+    123
+   ],
+   [
+    "Error - Missing attribute Type 1 Required Element=<..> Module=<..>",
+    110
+   ],
+   [
+    "Error - Attribute present when condition unsatisfied (which may not be present otherwise) Type 1C Conditional Element=<..> Module=<..>",
+    77
+   ],
+   [
+    "Error - Illegal root for UID - \"3.1.755.1.3.3756213.9.632.3767770174295087735\" in (tag)",
+    73
+   ],
+   [
+    "Error - Bad attribute Value Multiplicity Type 3 Optional Element=<..> Module=<..>",
+    56
+   ],
+   [
+    "Error - Bad Sequence number of Items 0 (1-n Required by Module definition) Element=<..> Module=<..>",
+    55
+   ],
+   [
+    "Error - Missing attribute Type 2 Required Element=<..> Module=<..>",
+    44
+   ],
+   [
+    "Error - Illegal root for UID - \"3.1.755.1.3.3756213.9.632.3912467996779888855\" in (tag)",
+    38
+   ],
+   [
+    "Error - Illegal root for UID - \"3.1.755.1.3.3756213.9.632.2651306048445902475\" in (tag)",
+    37
+   ],
+   [
+    "Error - Illegal root for UID - \"3.1.755.1.3.3756213.9.632.8238938686562111812\" in (tag)",
+    36
+   ],
+   [
+    "Error - Illegal root for UID - \"3.1.755.1.3.3756213.9.632.8119328880393866674\" in (tag)",
+    36
+   ],
+   [
+    "Error - Illegal root for UID - \"3.1.755.1.3.3756213.9.632.2823904128812494525\" in (tag)",
+    34
+   ],
+   [
+    "Error - Illegal root for UID - \"3.4.585.0.0.8284097.9.501.3332091838938683574\" in (tag)",
+    30
+   ],
+   [
+    "Error - Illegal root for UID - \"3.4.585.0.0.8284097.9.501.2694895634914817566\" in (tag)",
+    30
+   ],
+   [
+    "Error - Empty attribute (no value) Type 1 Required Element=<..> Module=<..>",
+    28
+   ],
+   [
+    "Error - Attribute present when condition unsatisfied (which may not be present otherwise) Type 2C Conditional Element=<..> Module=<..>",
+    27
+   ],
+   [
+    "Error - Illegal root for UID - \"3.1.874.1.3.8955936.3.406.3275461099748359143\" in (tag)",
+    26
+   ],
+   [
+    "Error - Illegal root for UID - \"3.1.874.1.3.8955936.3.406.2571635843887543751\" in (tag)",
+    26
+   ],
+   [
+    "Error - Dicom dataset contains invalid data values for Value Representations",
+    25
+   ],
+   [
+    "Error - Attribute present but empty (no value) even though condition not satisfied Type 1C Conditional Element=<..> Module=<..>",
+    18
+   ],
+   [
+    "Error - Illegal root for UID - \"3.4.585.0.0.8284097.9.501.2847499026825211776\" in (tag)",
+    15
+   ],
+   [
+    "Error - Illegal root for UID - \"3.4.585.0.0.8284097.9.501.1428826272121358134\" in (tag)",
+    15
+   ],
+   [
+    "Error - Illegal root for UID - \"3.4.585.0.0.8284097.9.501.2947239506638403548\" in (tag)",
+    15
+   ],
+   [
+    "Error - Illegal root for UID - \"3.4.585.0.0.8284097.9.501.2256707487331868363\" in (tag)",
+    15
+   ],
+   [
+    "Error - Illegal root for UID - \"3.4.585.0.0.8284097.9.501.1859594331174455737\" in (tag)",
+    15
+   ],
+   [
+    "Error - Illegal root for UID - \"3.4.585.0.0.8284097.9.501.2661704878859461205\" in (tag)",
+    15
+   ],
+   [
+    "Error - Illegal root for UID - \"3.4.585.0.0.8284097.9.501.3262730929399739479\" in (tag)",
+    15
+   ],
+   [
+    "Error - Illegal root for UID - \"3.4.585.0.0.8284097.9.501.1675956140590704039\" in (tag)",
+    15
+   ],
+   [
+    "Error - Illegal root for UID - \"3.1.874.1.3.8955936.3.406.1199544602340912419\" in (tag)",
+    13
+   ],
+   [
+    "Error - Illegal root for UID - \"3.1.874.1.3.8955936.3.406.1925443172982664609\" in (tag)",
+    13
+   ],
+   [
+    "Error - Illegal root for UID - \"3.1.874.1.3.8955936.3.406.6631804063311606352\" in (tag)",
+    13
+   ],
+   [
+    "Error - Illegal root for UID - \"3.1.874.1.3.8955936.3.406.1912537164283785488\" in (tag)",
+    13
+   ],
+   [
+    "Error - Unrecognized enumerated value <U> for value 1 of attribute <Patient's Sex>",
+    4
+   ],
+   [
+    "Error - Illegal root for UID - \"3.1.649.0.3.2749883.1.963.1962617918892736805\" in (tag)",
+    4
+   ],
+   [
+    "Error - Illegal root for UID - \"3.1.649.0.3.2749883.1.963.1468740356373270993\" in (tag)",
+    4
+   ],
+   [
+    "Error - Illegal root for UID - \"3.1.649.0.3.2749883.1.963.9078463720147286531\" in (tag)",
+    4
+   ],
+   [
+    "Error - PixelAspectRatio may not be present when it has a ratio of 1:1 - values are 1\\1",
+    3
+   ],
+   [
+    "Error - Shall not be present when PixelSpacing is present - attribute <PixelAspectRatio>",
+    3
+   ],
+   [
+    "Error - Illegal root for UID - \"3.2.956.0.2.6104777.7.225.1639143638990872709\" in (tag)",
+    3
+   ],
+   [
+    "Error - Illegal root for UID - \"3.2.956.0.2.6104777.7.225.1634850035511404130\" in (tag)",
+    3
+   ],
+   [
+    "Error - Illegal root for UID - \"3.2.956.0.2.6104777.7.225.1465515250885089218\" in (tag)",
+    3
+   ],
+   [
+    "Error - Illegal root for UID - \"3.4.532.0.2.0963763.5.840.4957923042450242293\" in (tag)",
+    3
+   ],
+   [
+    "Error - Illegal root for UID - \"3.3.615.0.1.0507964.2.389.1698519271890371117\" in (tag)",
+    3
+   ],
+   [
+    "Error - Illegal root for UID - \"3.4.250.0.3.0447726.8.787.2486216895811504459\" in (tag)",
+    3
+   ],
+   [
+    "Error - Illegal root for UID - \"3.4.250.0.3.0447726.8.787.4802092294872552929\" in (tag)",
+    3
+   ],
+   [
+    "Error - Illegal root for UID - \"3.4.250.0.3.0447726.8.787.1295625342042406287\" in (tag)",
+    3
+   ],
+   [
+    "Error - Illegal root for UID - \"3.4.250.0.3.0447726.8.787.3357488340878126896\" in (tag)",
+    3
+   ],
+   [
+    "Error - Illegal root for UID - \"3.4.585.0.0.8284097.9.501.3102664272537050864\" in (tag)",
+    3
+   ],
+   [
+    "Error - Illegal root for UID - \"3.5.673.1.1.2288579.7.086.2191008169358504875\" in (tag)",
+    3
+   ],
+   [
+    "Error - Illegal root for UID - \"3.2.939.1.0.0619232.7.414.2675252945179138679\" in (tag)",
+    3
+   ],
+   [
+    "Error - Illegal root for UID - \"3.2.939.1.0.0619232.7.414.1605125244936515816\" in (tag)",
+    3
+   ],
+   [
+    "Error - Illegal root for UID - \"3.2.939.1.0.0619232.7.414.3222443848138789268\" in (tag)",
+    3
+   ],
+   [
+    "Error - Illegal root for UID - \"3.1.481.0.0.1125727.9.556.2767303011690721245\" in (tag)",
+    2
+   ],
+   [
+    "Error - Illegal root for UID - \"3.1.481.0.0.1125727.9.556.1530417802811153775\" in (tag)",
+    2
+   ],
+   [
+    "Error - Illegal root for UID - \"3.2.382.0.1.7562250.6.898.2232191260555793839\" in (tag)",
+    2
+   ],
+   [
+    "Error - Illegal root for UID - \"3.1.466.0.1.7370962.3.232.2956086629594847994\" in (tag)",
+    2
+   ],
+   [
+    "Error - Illegal root for UID - \"3.1.466.0.1.7370962.3.232.6916661911247063046\" in (tag)",
+    2
+   ],
+   [
+    "Error - Illegal root for UID - \"3.1.466.0.1.7370962.3.232.1483692844521738870\" in (tag)",
+    2
+   ],
+   [
+    "Error - Illegal root for UID - \"3.1.466.0.1.7370962.3.232.1146247316994454830\" in (tag)",
+    2
+   ],
+   [
+    "Error - Illegal root for UID - \"3.1.466.0.1.7370962.3.232.3182752179886962816\" in (tag)",
+    2
+   ],
+   [
+    "Error - Illegal root for UID - \"3.2.969.0.1.4856258.2.740.1164139224345707808\" in (tag)",
+    2
+   ],
+   [
+    "Error - Illegal root for UID - \"3.2.969.0.1.4856258.2.740.3153444126285085962\" in (tag)",
+    2
+   ],
+   [
+    "Error - Illegal root for UID - \"3.2.969.0.1.4856258.2.740.2896397383003381211\" in (tag)",
+    2
+   ],
+   [
+    "Error - Illegal root for UID - \"3.2.969.0.1.4856258.2.740.2648124829677186892\" in (tag)",
+    2
+   ],
+   [
+    "Error - Illegal root for UID - \"3.2.969.0.1.4856258.2.740.1222484043180202238\" in (tag)",
+    2
+   ],
+   [
+    "Error - Illegal root for UID - \"3.1.874.1.3.8955936.3.406.1467785388929524454\" in (tag)",
+    2
+   ],
+   [
+    "Error - Illegal root for UID - \"3.1.874.1.3.8955936.3.406.2396889836060781755\" in (tag)",
+    2
+   ],
+   [
+    "Error - Illegal root for UID - \"3.1.874.1.3.8955936.3.406.1392978473378127923\" in (tag)",
+    2
+   ],
+   [
+    "Error - Illegal root for UID - \"3.1.874.1.3.8955936.3.406.1541939300884133338\" in (tag)",
+    2
+   ],
+   [
+    "Error - Illegal root for UID - \"3.1.874.1.3.8955936.3.406.1785122198786617256\" in (tag)",
+    2
+   ],
+   [
+    "Error - Illegal root for UID - \"3.1.874.1.3.8955936.3.406.3545705739232228634\" in (tag)",
+    2
+   ],
+   [
+    "Error - Illegal root for UID - \"3.1.874.1.3.8955936.3.406.2680701662653186998\" in (tag)",
+    2
+   ],
+   [
+    "Error - Illegal root for UID - \"3.1.874.1.3.8955936.3.406.1881135978675512607\" in (tag)",
+    2
+   ],
+   [
+    "Error - Illegal root for UID - \"3.1.874.1.3.8955936.3.406.2136532168447792961\" in (tag)",
+    2
+   ],
+   [
+    "Error - Illegal root for UID - \"3.1.874.1.3.8955936.3.406.2464774692047299597\" in (tag)",
+    2
+   ],
+   [
+    "Error - Illegal root for UID - \"3.1.874.1.3.8955936.3.406.3169261893684337941\" in (tag)",
+    2
+   ],
+   [
+    "Error - Illegal root for UID - \"3.1.874.1.3.8955936.3.406.3171443753331545222\" in (tag)",
+    2
+   ],
+   [
+    "Error - Illegal root for UID - \"3.1.874.1.3.8955936.3.406.1181191422018004194\" in (tag)",
+    2
+   ],
+   [
+    "Error - Illegal root for UID - \"3.2.144.1.2.0137535.6.683.3050735153747830673\" in (tag)",
+    2
+   ],
+   [
+    "Error - Illegal root for UID - \"3.3.545.1.3.9150026.3.180.8223467129955732056\" in (tag)",
+    2
+   ],
+   [
+    "Error - Illegal root for UID - \"3.2.956.0.2.6104777.7.225.2073418634443745514\" in (tag)",
+    2
+   ],
+   [
+    "Error - Illegal root for UID - \"3.2.956.0.2.6104777.7.225.6128449889190353445\" in (tag)",
+    2
+   ],
+   [
+    "Error - Illegal root for UID - \"3.2.956.0.2.6104777.7.225.1428038066993712671\" in (tag)",
+    2
+   ],
+   [
+    "Error - Illegal root for UID - \"3.4.532.0.2.0963763.5.840.5369318583454819456\" in (tag)",
+    2
+   ],
+   [
+    "Error - Illegal root for UID - \"3.4.532.0.2.0963763.5.840.1262720313208079912\" in (tag)",
+    2
+   ],
+   [
+    "Error - Illegal root for UID - \"3.4.532.0.2.0963763.5.840.4997559227639336981\" in (tag)",
+    2
+   ],
+   [
+    "Error - Illegal root for UID - \"3.4.532.0.2.0963763.5.840.1395356858145597716\" in (tag)",
+    2
+   ],
+   [
+    "Error - Illegal root for UID - \"3.1.649.0.3.2749883.1.963.1730743731785917253\" in (tag)",
+    2
+   ],
+   [
+    "Error - Illegal root for UID - \"3.1.649.0.3.2749883.1.963.1151498296432136607\" in (tag)",
+    2
+   ],
+   [
+    "Error - Illegal root for UID - \"3.1.649.0.3.2749883.1.963.1974228491703186728\" in (tag)",
+    2
+   ],
+   [
+    "Error - Illegal root for UID - \"3.1.649.0.3.2749883.1.963.2321750818164168615\" in (tag)",
+    2
+   ],
+   [
+    "Error - Illegal root for UID - \"3.1.649.0.3.2749883.1.963.3029822284500639423\" in (tag)",
+    2
+   ],
+   [
+    "Error - Illegal root for UID - \"3.1.649.0.3.2749883.1.963.2088838433495404520\" in (tag)",
+    2
+   ],
+   [
+    "Error - Illegal root for UID - \"3.1.649.0.3.2749883.1.963.4029344649161555964\" in (tag)",
+    2
+   ],
+   [
+    "Error - Illegal root for UID - \"3.1.649.0.3.2749883.1.963.3616221764123967297\" in (tag)",
+    2
+   ],
+   [
+    "Error - Illegal root for UID - \"3.1.649.0.3.2749883.1.963.2016844011001594507\" in (tag)",
+    2
+   ],
+   [
+    "Error - Illegal root for UID - \"3.5.981.0.3.5891551.8.202.1789958768162889714\" in (tag)",
+    2
+   ],
+   [
+    "Error - Illegal root for UID - \"3.3.887.0.0.7990059.2.604.3128843770115413514\" in (tag)",
+    2
+   ],
+   [
+    "Error - Illegal root for UID - \"3.3.887.0.0.7990059.2.604.1840881252741168829\" in (tag)",
+    2
+   ],
+   [
+    "Error - Illegal root for UID - \"3.3.887.0.0.7990059.2.604.1893100274861709659\" in (tag)",
+    2
+   ],
+   [
+    "Error - Unrecognized enumerated value <SECONDARY> for value 2 of attribute <Image Type>",
+    2
+   ],
+   [
+    "Error - Illegal root for UID - \"3.4.911.0.0.7452303.1.901.5454564237057479947\" in (tag)",
+    2
+   ],
+   [
+    "Error - Illegal root for UID - \"3.4.911.0.0.7452303.1.901.2919808965208501865\" in (tag)",
+    2
+   ],
+   [
+    "Error - Illegal root for UID - \"3.4.911.0.0.7452303.1.901.1893100274861709659\" in (tag)",
+    2
+   ],
+   [
+    "Error - Illegal root for UID - \"3.4.823.0.1.5139398.5.009.1390048191957875885\" in (tag)",
+    2
+   ],
+   [
+    "Error - Illegal root for UID - \"3.1.755.1.3.3756213.9.632.8443554556015575823\" in (tag)",
+    2
+   ],
+   [
+    "Error - Illegal root for UID - \"3.1.755.1.3.3756213.9.632.1772266883277996721\" in (tag)",
+    2
+   ],
+   [
+    "Error - Illegal root for UID - \"3.1.755.1.3.3756213.9.632.3232892386912407052\" in (tag)",
+    2
+   ],
+   [
+    "Error - Illegal root for UID - \"3.1.755.1.3.3756213.9.632.4585368259746750346\" in (tag)",
+    2
+   ],
+   [
+    "Error - Illegal root for UID - \"3.1.755.1.3.3756213.9.632.9774840644229372344\" in (tag)",
+    2
+   ],
+   [
+    "Error - Illegal root for UID - \"3.1.755.1.3.3756213.9.632.2906677307626010360\" in (tag)",
+    2
+   ],
+   [
+    "Error - Illegal root for UID - \"3.1.755.1.3.3756213.9.632.1483175936775550609\" in (tag)",
+    2
+   ],
+   [
+    "Error - Illegal root for UID - \"3.1.755.1.3.3756213.9.632.8261351984355436117\" in (tag)",
+    2
+   ],
+   [
+    "Error - Illegal root for UID - \"3.1.755.1.3.3756213.9.632.3292591357195259528\" in (tag)",
+    2
+   ],
+   [
+    "Error - Illegal root for UID - \"3.1.755.1.3.3756213.9.632.6087667939099338338\" in (tag)",
+    2
+   ],
+   [
+    "Error - Illegal root for UID - \"3.1.755.1.3.3756213.9.632.9887204745984335541\" in (tag)",
+    2
+   ],
+   [
+    "Error - Illegal root for UID - \"3.1.755.1.3.3756213.9.632.2599270194527830685\" in (tag)",
+    2
+   ],
+   [
+    "Error - Illegal root for UID - \"3.1.755.1.3.3756213.9.632.9650283369462575088\" in (tag)",
+    2
+   ],
+   [
+    "Error - Illegal root for UID - \"3.1.755.1.3.3756213.9.632.1909224109394779540\" in (tag)",
+    2
+   ],
+   [
+    "Error - Illegal root for UID - \"3.1.755.1.3.3756213.9.632.9469507867238679318\" in (tag)",
+    2
+   ],
+   [
+    "Error - Illegal root for UID - \"3.1.755.1.3.3756213.9.632.1787719120377365005\" in (tag)",
+    2
+   ],
+   [
+    "Error - Illegal root for UID - \"3.1.755.1.3.3756213.9.632.6677550674751095104\" in (tag)",
+    2
+   ],
+   [
+    "Error - Illegal root for UID - \"3.1.755.1.3.3756213.9.632.2923678073291857783\" in (tag)",
+    2
+   ],
+   [
+    "Error - Illegal root for UID - \"3.1.755.1.3.3756213.9.632.1250932230968224027\" in (tag)",
+    2
+   ],
+   [
+    "Error - Illegal root for UID - \"3.1.755.1.3.3756213.9.632.1836413892751757191\" in (tag)",
+    2
+   ],
+   [
+    "Error - Illegal root for UID - \"3.1.755.1.3.3756213.9.632.2906960089324679977\" in (tag)",
+    2
+   ],
+   [
+    "Error - Illegal root for UID - \"3.1.755.1.3.3756213.9.632.3041881008080539917\" in (tag)",
+    2
+   ],
+   [
+    "Error - Illegal root for UID - \"3.1.755.1.3.3756213.9.632.1168200362067215592\" in (tag)",
+    2
+   ],
+   [
+    "Error - Illegal root for UID - \"3.1.755.1.3.3756213.9.632.8015395284885015506\" in (tag)",
+    2
+   ],
+   [
+    "Error - Illegal root for UID - \"3.1.755.1.3.3756213.9.632.4483963270803172341\" in (tag)",
+    2
+   ],
+   [
+    "Error - Illegal root for UID - \"3.1.755.1.3.3756213.9.632.1228104947731101826\" in (tag)",
+    2
+   ],
+   [
+    "Error - Illegal root for UID - \"3.1.755.1.3.3756213.9.632.2578067837152021273\" in (tag)",
+    2
+   ],
+   [
+    "Error - Illegal root for UID - \"3.1.755.1.3.3756213.9.632.2844331006889936073\" in (tag)",
+    2
+   ],
+   [
+    "Error - Illegal root for UID - \"3.1.755.1.3.3756213.9.632.7007820303263896502\" in (tag)",
+    2
+   ],
+   [
+    "Error - Illegal root for UID - \"3.1.755.1.3.3756213.9.632.1673011275716105732\" in (tag)",
+    2
+   ],
+   [
+    "Error - Illegal root for UID - \"3.1.755.1.3.3756213.9.632.2489318196129918048\" in (tag)",
+    2
+   ],
+   [
+    "Error - Illegal root for UID - \"3.1.755.1.3.3756213.9.632.1022191552566378155\" in (tag)",
+    2
+   ],
+   [
+    "Error - Illegal root for UID - \"3.1.755.1.3.3756213.9.632.1181033559181838591\" in (tag)",
+    2
+   ],
+   [
+    "Error - Illegal root for UID - \"3.1.755.1.3.3756213.9.632.5132408813722033912\" in (tag)",
+    2
+   ],
+   [
+    "Error - Illegal root for UID - \"3.1.755.1.3.3756213.9.632.2023834906880975876\" in (tag)",
+    2
+   ],
+   [
+    "Error - Illegal root for UID - \"3.1.755.1.3.3756213.9.632.1058232961205889825\" in (tag)",
+    2
+   ],
+   [
+    "Error - Illegal root for UID - \"3.1.755.1.3.3756213.9.632.2176236518519081017\" in (tag)",
+    2
+   ],
+   [
+    "Error - Illegal root for UID - \"3.3.615.0.1.0507964.2.389.2205413869985907004\" in (tag)",
+    2
+   ],
+   [
+    "Error - Illegal root for UID - \"3.3.615.0.1.0507964.2.389.3207685579020205008\" in (tag)",
+    2
+   ],
+   [
+    "Error - Illegal root for UID - \"3.3.615.0.1.0507964.2.389.2301159148239709253\" in (tag)",
+    2
+   ],
+   [
+    "Error - Illegal root for UID - \"3.3.615.0.1.0507964.2.389.2651306048445902475\" in (tag)",
+    2
+   ],
+   [
+    "Error - Illegal root for UID - \"3.3.615.0.1.0507964.2.389.3111337327858308185\" in (tag)",
+    2
+   ],
+   [
+    "Error - Illegal root for UID - \"3.4.250.0.3.0447726.8.787.3728121302499030214\" in (tag)",
+    2
+   ],
+   [
+    "Error - Illegal root for UID - \"3.4.250.0.3.0447726.8.787.2246469936684882522\" in (tag)",
+    2
+   ],
+   [
+    "Error - Illegal root for UID - \"3.4.250.0.3.0447726.8.787.2371467908682903111\" in (tag)",
+    2
+   ],
+   [
+    "Error - Illegal root for UID - \"3.4.585.0.0.8284097.9.501.1687006898573743736\" in (tag)",
+    2
+   ],
+   [
+    "Error - Illegal root for UID - \"3.4.585.0.0.8284097.9.501.7584309678162488063\" in (tag)",
+    2
+   ],
+   [
+    "Error - Illegal root for UID - \"3.4.585.0.0.8284097.9.501.1032462483205654198\" in (tag)",
+    2
+   ],
+   [
+    "Error - Illegal root for UID - \"3.4.585.0.0.8284097.9.501.2805952026963460629\" in (tag)",
+    2
+   ],
+   [
+    "Error - Illegal root for UID - \"3.4.585.0.0.8284097.9.501.3928253708637510057\" in (tag)",
+    2
+   ],
+   [
+    "Error - Illegal root for UID - \"3.4.585.0.0.8284097.9.501.2978848636742525847\" in (tag)",
+    2
+   ],
+   [
+    "Error - Illegal root for UID - \"3.4.585.0.0.8284097.9.501.2503383833539046162\" in (tag)",
+    2
+   ],
+   [
+    "Error - Illegal root for UID - \"3.4.585.0.0.8284097.9.501.2031563814113378506\" in (tag)",
+    2
+   ],
+   [
+    "Error - Illegal root for UID - \"3.4.585.0.0.8284097.9.501.2577210707860365122\" in (tag)",
+    2
+   ],
+   [
+    "Error - Illegal root for UID - \"3.4.585.0.0.8284097.9.501.1872613208994983492\" in (tag)",
+    2
+   ],
+   [
+    "Error - Illegal root for UID - \"3.4.585.0.0.8284097.9.501.2066003038184317620\" in (tag)",
+    2
+   ],
+   [
+    "Error - Illegal root for UID - \"3.4.585.0.0.8284097.9.501.1063371274390499727\" in (tag)",
+    2
+   ],
+   [
+    "Error - Illegal root for UID - \"3.4.585.0.0.8284097.9.501.1742798710223512923\" in (tag)",
+    2
+   ],
+   [
+    "Error - Illegal root for UID - \"3.4.585.0.0.8284097.9.501.2749680573603239147\" in (tag)",
+    2
+   ],
+   [
+    "Error - Illegal root for UID - \"3.4.585.0.0.8284097.9.501.2282333930231266526\" in (tag)",
+    2
+   ],
+   [
+    "Error - Illegal root for UID - \"3.5.673.1.1.2288579.7.086.9162106066156619780\" in (tag)",
+    2
+   ],
+   [
+    "Error - Illegal root for UID - \"3.5.673.1.1.2288579.7.086.2252999082549339872\" in (tag)",
+    2
+   ],
+   [
+    "Error - Illegal root for UID - \"3.5.673.1.1.2288579.7.086.3325640956790363474\" in (tag)",
+    2
+   ],
+   [
+    "Error - Illegal root for UID - \"3.5.673.1.1.2288579.7.086.6798610067464243793\" in (tag)",
+    2
+   ],
+   [
+    "Error - Illegal root for UID - \"3.4.496.1.0.7784115.1.169.4913832099566634470\" in (tag)",
+    2
+   ],
+   [
+    "Error - Illegal root for UID - \"3.2.939.1.0.0619232.7.414.4817805062122560439\" in (tag)",
+    2
+   ],
+   [
+    "Error - Illegal root for UID - \"3.2.939.1.0.0619232.7.414.3160772408173053175\" in (tag)",
+    2
+   ],
+   [
+    "Error - Illegal root for UID - \"3.2.939.1.0.0619232.7.414.1577694523799030393\" in (tag)",
+    2
+   ],
+   [
+    "Error - Illegal root for UID - \"3.1.481.0.0.1125727.9.556.1294009987561958606\" in (tag)",
+    1
+   ],
+   [
+    "Error - Illegal root for UID - \"3.1.481.0.0.1125727.9.556.8448606916313117015\" in (tag)",
+    1
+   ],
+   [
+    "Error - Illegal root for UID - \"3.1.481.0.0.1125727.9.556.1497475368670611571\" in (tag)",
+    1
+   ],
+   [
+    "Error - Illegal root for UID - \"3.1.481.0.0.1125727.9.556.1497475368670611571\" in (tag) -set UID",
+    1
+   ],
+   [
+    "Error - May only be present in For Presentation images - attribute <WindowCenter>",
+    1
+   ],
+   [
+    "Error - Illegal root for UID - \"3.2.382.0.1.7562250.6.898.4560041061848692075\" in (tag)",
+    1
+   ],
+   [
+    "Error - Illegal root for UID - \"3.2.382.0.1.7562250.6.898.2226200120128976703\" in (tag)",
+    1
+   ],
+   [
+    "Error - Illegal root for UID - \"3.2.382.0.1.7562250.6.898.8622288695943484803\" in (tag)",
+    1
+   ],
+   [
+    "Error - Illegal root for UID - \"3.2.382.0.1.7562250.6.898.1356709361158424920\" in (tag)",
+    1
+   ],
+   [
+    "Error - Illegal root for UID - \"3.2.382.0.1.7562250.6.898.5375200714070866469\" in (tag)",
+    1
+   ],
+   [
+    "Error - Illegal root for UID - \"3.2.382.0.1.7562250.6.898.3191250945722007633\" in (tag)",
+    1
+   ],
+   [
+    "Error - Illegal root for UID - \"3.2.969.0.1.4856258.2.740.1395212425376954695\" in (tag)",
+    1
+   ],
+   [
+    "Error - Illegal root for UID - \"3.2.969.0.1.4856258.2.740.3049947016622309734\" in (tag)",
+    1
+   ],
+   [
+    "Error - Illegal root for UID - \"3.2.144.1.2.0137535.6.683.1214942220616161257\" in (tag)",
+    1
+   ],
+   [
+    "Error - Illegal root for UID - \"3.2.144.1.2.0137535.6.683.2337113981393126883\" in (tag)",
+    1
+   ],
+   [
+    "Error - Illegal root for UID - \"3.2.144.1.2.0137535.6.683.6869163531165418898\" in (tag)",
+    1
+   ],
+   [
+    "Error - Illegal root for UID - \"3.3.545.1.3.9150026.3.180.1805206165095699626\" in (tag)",
+    1
+   ],
+   [
+    "Error - Illegal root for UID - \"3.3.545.1.3.9150026.3.180.2532033625955606317\" in (tag)",
+    1
+   ],
+   [
+    "Error - Illegal root for UID - \"3.3.545.1.3.9150026.3.180.1656846540498629765\" in (tag)",
+    1
+   ],
+   [
+    "Error - Illegal root for UID - \"3.4.532.0.2.0963763.5.840.2246468215330633403\" in (tag)",
+    1
+   ],
+   [
+    "Error - Illegal root for UID - \"3.4.532.0.2.0963763.5.840.2690331308977652764\" in (tag)",
+    1
+   ],
+   [
+    "Error - Illegal root for UID - \"3.4.532.0.2.0963763.5.840.5055097820764717676\" in (tag)",
+    1
+   ],
+   [
+    "Error - Illegal root for UID - \"3.4.532.0.2.0963763.5.840.1898296414421195170\" in (tag)",
+    1
+   ],
+   [
+    "Error - Illegal root for UID - \"3.4.532.0.2.0963763.5.840.3246425171195188443\" in (tag)",
+    1
+   ],
+   [
+    "Error - Illegal root for UID - \"3.1.649.0.3.2749883.1.963.2895805029582239377\" in (tag)",
+    1
+   ],
+   [
+    "Error - Illegal root for UID - \"3.1.649.0.3.2749883.1.963.3325959799059027610\" in (tag)",
+    1
+   ],
+   [
+    "Error - Illegal root for UID - \"3.5.981.0.3.5891551.8.202.1904879560526683003\" in (tag)",
+    1
+   ],
+   [
+    "Error - Illegal root for UID - \"3.5.981.0.3.5891551.8.202.6965974128673925647\" in (tag)",
+    1
+   ],
+   [
+    "Error - Illegal root for UID - \"3.5.981.0.3.5891551.8.202.2105441072766768066\" in (tag)",
+    1
+   ],
+   [
+    "Error - Illegal root for UID - \"3.3.887.0.0.7990059.2.604.2782548663637899866\" in (tag)",
+    1
+   ],
+   [
+    "Error - Illegal root for UID - \"3.3.887.0.0.7990059.2.604.7547247796329468795\" in (tag)",
+    1
+   ],
+   [
+    "Error - Illegal root for UID - \"3.3.887.0.0.7990059.2.604.2892979316798253024\" in (tag)",
+    1
+   ],
+   [
+    "Error - Illegal root for UID - \"3.3.887.0.0.7990059.2.604.7216891879207058590\" in (tag)",
+    1
+   ],
+   [
+    "Error - Illegal root for UID - \"3.3.887.0.0.7990059.2.604.1099528158974108701\" in (tag)",
+    1
+   ],
+   [
+    "Error - Illegal root for UID - \"3.3.887.0.0.7990059.2.604.2645353545607169241\" in (tag)",
+    1
+   ],
+   [
+    "Error - Illegal root for UID - \"3.3.887.0.0.7990059.2.604.1142647725404461847\" in (tag)",
+    1
+   ],
+   [
+    "Error - Illegal root for UID - \"3.3.887.0.0.7990059.2.604.2410885493754736731\" in (tag)",
+    1
+   ],
+   [
+    "Error - Illegal root for UID - \"3.3.887.0.0.7990059.2.604.2198012606192223336\" in (tag)",
+    1
+   ],
+   [
+    "Error - Illegal root for UID - \"3.3.887.0.0.7990059.2.604.6609992527253610405\" in (tag)",
+    1
+   ],
+   [
+    "Error - Illegal root for UID - \"3.4.911.0.0.7452303.1.901.2782548663637899866\" in (tag)",
+    1
+   ],
+   [
+    "Error - Illegal root for UID - \"3.4.911.0.0.7452303.1.901.1025823112389872458\" in (tag)",
+    1
+   ],
+   [
+    "Error - Illegal root for UID - \"3.4.911.0.0.7452303.1.901.2892979316798253024\" in (tag)",
+    1
+   ],
+   [
+    "Error - Illegal root for UID - \"3.4.911.0.0.7452303.1.901.7216891879207058590\" in (tag)",
+    1
+   ],
+   [
+    "Error - Illegal root for UID - \"3.4.911.0.0.7452303.1.901.1283288930126092887\" in (tag)",
+    1
+   ],
+   [
+    "Error - Illegal root for UID - \"3.4.911.0.0.7452303.1.901.4694931217595356474\" in (tag)",
+    1
+   ],
+   [
+    "Error - Illegal root for UID - \"3.4.911.0.0.7452303.1.901.2060902001753012630\" in (tag)",
+    1
+   ],
+   [
+    "Error - Illegal root for UID - \"3.4.911.0.0.7452303.1.901.2245378148777465223\" in (tag)",
+    1
+   ],
+   [
+    "Error - Illegal root for UID - \"3.4.911.0.0.7452303.1.901.9848250898230174418\" in (tag)",
+    1
+   ],
+   [
+    "Error - Illegal root for UID - \"3.4.911.0.0.7452303.1.901.2921419100524330748\" in (tag)",
+    1
+   ],
+   [
+    "Error - Illegal root for UID - \"3.4.823.0.1.5139398.5.009.2774909906771565418\" in (tag)",
+    1
+   ],
+   [
+    "Error - Illegal root for UID - \"3.4.823.0.1.5139398.5.009.2922224025865575882\" in (tag)",
+    1
+   ],
+   [
+    "Error - Illegal root for UID - \"3.4.823.0.1.5139398.5.009.2022610382230403487\" in (tag)",
+    1
+   ],
+   [
+    "Error - Illegal root for UID - \"3.4.823.0.1.5139398.5.009.3225903761765232034\" in (tag)",
+    1
+   ],
+   [
+    "Error - Illegal root for UID - \"3.4.823.0.1.5139398.5.009.2213188170240812441\" in (tag)",
+    1
+   ],
+   [
+    "Error - Illegal root for UID - \"3.4.823.0.1.5139398.5.009.5637424138204365912\" in (tag)",
+    1
+   ],
+   [
+    "Error - Illegal root for UID - \"3.1.755.1.3.3756213.9.632.2936742109197398459\" in (tag)",
+    1
+   ],
+   [
+    "Error - Illegal root for UID - \"3.1.755.1.3.3756213.9.632.1597287086640527900\" in (tag)",
+    1
+   ],
+   [
+    "Error - Illegal root for UID - \"3.1.755.1.3.3756213.9.632.2879562198953027365\" in (tag)",
+    1
+   ],
+   [
+    "Error - Bad Sequence number of Items 0 (1 Required by Module definition) Element=<..> Module=<..>",
+    1
+   ],
+   [
+    "Error - Illegal root for UID - \"3.3.615.0.1.0507964.2.389.8238938686562111812\" in (tag)",
+    1
+   ],
+   [
+    "Error - Illegal root for UID - \"3.3.615.0.1.0507964.2.389.8119328880393866674\" in (tag)",
+    1
+   ],
+   [
+    "Error - Illegal root for UID - \"3.3.615.0.1.0507964.2.389.2936742109197398459\" in (tag)",
+    1
+   ],
+   [
+    "Error - Illegal root for UID - \"3.3.615.0.1.0507964.2.389.6230688934379144453\" in (tag)",
+    1
+   ],
+   [
+    "Error - Illegal root for UID - \"3.3.615.0.1.0507964.2.389.1597287086640527900\" in (tag)",
+    1
+   ],
+   [
+    "Error - Illegal root for UID - \"3.3.615.0.1.0507964.2.389.3289840934657553279\" in (tag)",
+    1
+   ],
+   [
+    "Error - Illegal root for UID - \"3.4.585.0.0.8284097.9.501.1734178845042569049\" in (tag)",
+    1
+   ],
+   [
+    "Error - Illegal root for UID - \"3.4.585.0.0.8284097.9.501.2854280428675604716\" in (tag)",
+    1
+   ],
+   [
+    "Error - Illegal root for UID - \"3.4.585.0.0.8284097.9.501.2762773624873837543\" in (tag)",
+    1
+   ],
+   [
+    "Error - Illegal root for UID - \"3.4.585.0.0.8284097.9.501.3398335378358457635\" in (tag)",
+    1
+   ],
+   [
+    "Error - Illegal root for UID - \"3.4.585.0.0.8284097.9.501.5130410626176925496\" in (tag)",
+    1
+   ],
+   [
+    "Error - Illegal root for UID - \"3.4.585.0.0.8284097.9.501.1563330344392515738\" in (tag)",
+    1
+   ],
+   [
+    "Error - Illegal root for UID - \"3.4.585.0.0.8284097.9.501.9178530652362875737\" in (tag)",
+    1
+   ],
+   [
+    "Error - Illegal root for UID - \"3.4.585.0.0.8284097.9.501.1864411056488394894\" in (tag)",
+    1
+   ],
+   [
+    "Error - Illegal root for UID - \"3.4.585.0.0.8284097.9.501.1218542699083384614\" in (tag)",
+    1
+   ],
+   [
+    "Error - Illegal root for UID - \"3.4.585.0.0.8284097.9.501.3180231493031702733\" in (tag)",
+    1
+   ],
+   [
+    "Error - Illegal root for UID - \"3.4.585.0.0.8284097.9.501.2505778874577687574\" in (tag)",
+    1
+   ],
+   [
+    "Error - Illegal root for UID - \"3.4.585.0.0.8284097.9.501.2138170490907075570\" in (tag)",
+    1
+   ],
+   [
+    "Error - Illegal root for UID - \"3.5.673.1.1.2288579.7.086.1102828661526906633\" in (tag)",
+    1
+   ],
+   [
+    "Error - Illegal root for UID - \"3.5.673.1.1.2288579.7.086.7194866323899388366\" in (tag)",
+    1
+   ],
+   [
+    "Error - Illegal root for UID - \"3.5.673.1.1.2288579.7.086.2680283102980278835\" in (tag)",
+    1
+   ],
+   [
+    "Error - Illegal root for UID - \"3.5.673.1.1.2288579.7.086.2366209187409712277\" in (tag)",
+    1
+   ],
+   [
+    "Error - Illegal root for UID - \"3.5.673.1.1.2288579.7.086.2782413223891973023\" in (tag)",
+    1
+   ],
+   [
+    "Error - Illegal root for UID - \"3.5.673.1.1.2288579.7.086.1211953461472034255\" in (tag)",
+    1
+   ],
+   [
+    "Error - Illegal root for UID - \"3.5.673.1.1.2288579.7.086.1146395532051394842\" in (tag)",
+    1
+   ],
+   [
+    "Error - Illegal root for UID - \"3.4.496.1.0.7784115.1.169.8007107438882782937\" in (tag)",
+    1
+   ],
+   [
+    "Error - Illegal root for UID - \"3.4.496.1.0.7784115.1.169.1601096114926693784\" in (tag)",
+    1
+   ],
+   [
+    "Error - Illegal root for UID - \"3.4.496.1.0.7784115.1.169.3066759055217811508\" in (tag)",
+    1
+   ],
+   [
+    "Error - Illegal root for UID - \"3.4.496.1.0.7784115.1.169.6558222982585179667\" in (tag)",
+    1
+   ]
+  ],
+  "warnings": [
+   [
+    "Warning - Attribute is not present in standard DICOM IOD - (tag)",
+    1562
+   ],
+   [
+    "Warning - CodingSchemeDesignator is deprecated - attribute <CodingSchemeDesignator> = <99SDM>",
+    371
+   ],
+   [
+    "Warning - Retired attribute - (tag)",
+    317
+   ],
+   [
+    "Warning - CodingSchemeDesignator is deprecated - attribute <CodingSchemeDesignator> = <SNM3>",
+    217
+   ],
+   [
+    "Warning - Dicom dataset contains attributes not present in standard DICOM IOD - this is a Standard Extended SOP Class",
+    200
+   ],
+   [
+    "Warning - Dicom dataset contains retired attributes",
+    199
+   ],
+   [
+    "Warning - CodingSchemeDesignator is deprecated - attribute <CodingSchemeDesignator> = <SRT>",
+    70
+   ],
+   [
+    "Warning - Missing attribute or value that would be needed to build DICOMDIR - Study ID",
+    65
+   ],
+   [
+    "Warning - Unrecognized defined term <RTSUB> for value 1 of attribute <Randoms Correction Method>",
+    37
+   ],
+   [
+    "Warning - Unrecognized defined term <SLSENS> for value 8 of attribute <Corrected Image>",
+    36
+   ],
+   [
+    "Warning - is only permitted to be empty when actually unknown; should be absent (not empty) if an unpaired body part, and have a value if a paired body part - attribute <Laterality>",
+    20
+   ],
+   [
+    "Warning - Unrecognized defined term <SLSENS> for value 5 of attribute <Corrected Image>",
+    17
+   ],
+   [
+    "Warning - Unrecognized defined term <SLSENS> for value 7 of attribute <Corrected Image>",
+    15
+   ],
+   [
+    "Warning - Value is zero for value 1 of attribute <Echo Train Length>",
+    12
+   ],
+   [
+    "Warning - Unrecognized defined term <FAST_GEMS> for value 1 of attribute <Scan Options>",
+    11
+   ],
+   [
+    "Warning - Attribute is not present in standard DICOM IOD - (tag) -set UID",
+    10
+   ],
+   [
+    "Warning - Unrecognized defined term <SAT_GEMS> for value 1 of attribute <Scan Options>",
+    10
+   ],
+   [
+    "Warning - Unrecognized defined term <LOCAL> for value 1 of attribute <Coding Scheme Designator>",
+    9
+   ],
+   [
+    "Warning - Unrecognized defined term <CT_SOM5 SPI> for value 4 of attribute <Image Type>",
+    9
+   ],
+   [
+    "Warning - Unrecognized defined term <NPW> for value 2 of attribute <Scan Options>",
+    9
+   ]
+  ]
+ },
+ "strict": {
+  "n_total": 23921,
+  "n_sampled": 200,
+  "instances_error_free": 1,
+  "iods": [
+   [
+    "PETImage",
+    123
+   ],
+   [
+    "CTImage",
+    37
+   ],
+   [
+    "MRImage",
+    36
+   ],
+   [
+    "SCImage",
+    3
+   ],
+   [
+    "DXImageForPresentation",
+    1
+   ]
+  ],
+  "errors": [
+   [
+    "Error - Empty attribute (no value) Type 1 Required Element=<..> Module=<..>",
+    195
+   ],
+   [
+    "Error - Missing attribute Type 1C Conditional Element=<..> Module=<..>",
+    166
+   ],
+   [
+    "Error - Missing attribute Type 2C Conditional Element=<..> Module=<..>",
+    142
+   ],
+   [
+    "Error - Shall not be present when PatientOrientationCodeSequence is present - attribute <PatientPosition>",
+    123
+   ],
+   [
+    "Error - Missing attribute Type 1 Required Element=<..> Module=<..>",
+    110
+   ],
+   [
+    "Error - Bad attribute Value Multiplicity Type 3 Optional Element=<..> Module=<..>",
+    99
+   ],
+   [
+    "Error - Bad Sequence number of Items 0 (1-n Required by Module definition) Element=<..> Module=<..>",
+    97
+   ],
+   [
+    "Error - Attribute present when condition unsatisfied (which may not be present otherwise) Type 1C Conditional Element=<..> Module=<..>",
+    77
+   ],
+   [
+    "Error - Missing attribute Type 2 Required Element=<..> Module=<..>",
+    44
+   ],
+   [
+    "Error - Attribute present but empty (no value) even though condition not satisfied Type 1C Conditional Element=<..> Module=<..>",
+    28
+   ],
+   [
+    "Error - Attribute present when condition unsatisfied (which may not be present otherwise) Type 2C Conditional Element=<..> Module=<..>",
+    27
+   ],
+   [
+    "Error - Empty attribute (no value) Type 1C Conditional Element=<..> Module=<..>",
+    12
+   ],
+   [
+    "Error - Unrecognized enumerated value <U> for value 1 of attribute <Patient's Sex>",
+    4
+   ],
+   [
+    "Error - PixelAspectRatio may not be present when it has a ratio of 1:1 - values are 1\\1",
+    3
+   ],
+   [
+    "Error - Shall not be present when PixelSpacing is present - attribute <PixelAspectRatio>",
+    3
+   ],
+   [
+    "Error - Unrecognized enumerated value <SECONDARY> for value 2 of attribute <Image Type>",
+    2
+   ],
+   [
+    "Error - Bad Sequence number of Items 0 (1 Required by Module definition) Element=<..> Module=<..>",
+    2
+   ],
+   [
+    "Error - May only be present in For Presentation images - attribute <WindowCenter>",
+    1
+   ]
+  ],
+  "warnings": [
+   [
+    "Warning - Attribute is not present in standard DICOM IOD - (tag)",
+    1562
+   ],
+   [
+    "Warning - CodingSchemeDesignator is deprecated - attribute <CodingSchemeDesignator> = <99SDM>",
+    371
+   ],
+   [
+    "Warning - Retired attribute - (tag)",
+    317
+   ],
+   [
+    "Warning - CodingSchemeDesignator is deprecated - attribute <CodingSchemeDesignator> = <SNM3>",
+    217
+   ],
+   [
+    "Warning - Missing attribute or value that would be needed to build DICOMDIR - Study Time",
+    200
+   ],
+   [
+    "Warning - Missing attribute or value that would be needed to build DICOMDIR - Study ID",
+    200
+   ],
+   [
+    "Warning - Value dubious for this VR - (tag) - Retired Person Name form",
+    200
+   ],
+   [
+    "Warning - Dicom dataset contains attributes not present in standard DICOM IOD - this is a Standard Extended SOP Class",
+    200
+   ],
+   [
+    "Warning - Dicom dataset contains retired attributes",
+    199
+   ],
+   [
+    "Warning - CodingSchemeDesignator is deprecated - attribute <CodingSchemeDesignator> = <SRT>",
+    70
+   ],
+   [
+    "Warning - Unrecognized defined term <RTSUB> for value 1 of attribute <Randoms Correction Method>",
+    37
+   ],
+   [
+    "Warning - Unrecognized defined term <SLSENS> for value 8 of attribute <Corrected Image>",
+    36
+   ],
+   [
+    "Warning - is only permitted to be empty when actually unknown; should be absent (not empty) if an unpaired body part, and have a value if a paired body part - attribute <Laterality>",
+    20
+   ],
+   [
+    "Warning - Unrecognized defined term <SLSENS> for value 5 of attribute <Corrected Image>",
+    17
+   ],
+   [
+    "Warning - Unrecognized defined term <SLSENS> for value 7 of attribute <Corrected Image>",
+    15
+   ],
+   [
+    "Warning - Value is zero for value 1 of attribute <Echo Train Length>",
+    12
+   ],
+   [
+    "Warning - Unrecognized defined term <FAST_GEMS> for value 1 of attribute <Scan Options>",
+    11
+   ],
+   [
+    "Warning - Attribute is not present in standard DICOM IOD - (tag) -set UID",
+    10
+   ],
+   [
+    "Warning - Unrecognized defined term <SAT_GEMS> for value 1 of attribute <Scan Options>",
+    10
+   ],
+   [
+    "Warning - Unrecognized defined term <CT_SOM5 SPI> for value 4 of attribute <Image Type>",
+    9
+   ]
+  ]
+ },
+ "retain": {
+  "n_total": 23921,
+  "n_sampled": 200,
+  "instances_error_free": 1,
+  "iods": [
+   [
+    "(0x7053,0x0010) LO PrivateCreator  - Warning - Bad private owner value - empty value",
+    51
+   ],
+   [
+    "(0x0009,0x10b2) SS IR Num Iterations  - Warning - Explicit value representation doesn't match data dictionary; Explicit <SL> Dictionary <SS>",
+    43
+   ],
+   [
+    "CTImage",
+    37
+   ],
+   [
+    "MRImage",
+    20
+   ],
+   [
+    "(0x0009,0x109d) SS Radial Filter 3D  - Warning - Explicit value representation doesn't match data dictionary; Explicit <SL> Dictionary <SS>",
+    17
+   ],
+   [
+    "(0x0027,0x1033) SL Imaging Options  - Warning - Explicit value representation doesn't match data dictionary; Explicit <UL> Dictionary <SL>",
+    13
+   ],
+   [
+    "PETImage",
+    10
+   ],
+   [
+    "(0x2001,0x0010) LO PrivateCreator  - Warning - Bad private owner value - empty value",
+    3
+   ],
+   [
+    "(0x0031,0x0011) LO PrivateCreator  - Warning - Bad private owner value - empty value",
+    2
+   ],
+   [
+    "SCImage",
+    2
+   ],
+   [
+    "DXImageForPresentation",
+    1
+   ],
+   [
+    "(0x0031,0x0012) LO PrivateCreator  - Warning - Bad private owner value - empty value",
+    1
+   ]
+  ],
+  "errors": [
+   [
+    "Error - Missing attribute Type 1C Conditional Element=<..> Module=<..>",
+    166
+   ],
+   [
+    "Error - Missing attribute Type 2C Conditional Element=<..> Module=<..>",
+    142
+   ],
+   [
+    "Error - Shall not be present when PatientOrientationCodeSequence is present - attribute <PatientPosition>",
+    123
+   ],
+   [
+    "Error - Missing attribute Type 1 Required Element=<..> Module=<..>",
+    110
+   ],
+   [
+    "Error - Bad attribute Value Multiplicity Type 3 Optional Element=<..> Module=<..>",
+    99
+   ],
+   [
+    "Error - Bad Sequence number of Items 0 (1-n Required by Module definition) Element=<..> Module=<..>",
+    97
+   ],
+   [
+    "Error - Attribute present when condition unsatisfied (which may not be present otherwise) Type 1C Conditional Element=<..> Module=<..>",
+    77
+   ],
+   [
+    "Error - Empty attribute (no value) Type 1 Required Element=<..> Module=<..>",
+    72
+   ],
+   [
+    "Error - Missing attribute Type 2 Required Element=<..> Module=<..>",
+    44
+   ],
+   [
+    "Error - Attribute present but empty (no value) even though condition not satisfied Type 1C Conditional Element=<..> Module=<..>",
+    28
+   ],
+   [
+    "Error - Attribute present when condition unsatisfied (which may not be present otherwise) Type 2C Conditional Element=<..> Module=<..>",
+    27
+   ],
+   [
+    "Error - Empty attribute (no value) Type 1C Conditional Element=<..> Module=<..>",
+    12
+   ],
+   [
+    "Error - Unrecognized enumerated value <U> for value 1 of attribute <Patient's Sex>",
+    4
+   ],
+   [
+    "Error - PixelAspectRatio may not be present when it has a ratio of 1:1 - values are 1\\1",
+    3
+   ],
+   [
+    "Error - Shall not be present when PixelSpacing is present - attribute <PixelAspectRatio>",
+    3
+   ],
+   [
+    "Error - Unrecognized enumerated value <SECONDARY> for value 2 of attribute <Image Type>",
+    2
+   ],
+   [
+    "Error - Bad Sequence number of Items 0 (1 Required by Module definition) Element=<..> Module=<..>",
+    2
+   ],
+   [
+    "Error - May only be present in For Presentation images - attribute <WindowCenter>",
+    1
+   ]
+  ],
+  "warnings": [
+   [
+    "Warning - Attribute is not present in standard DICOM IOD - (tag)",
+    1562
+   ],
+   [
+    "Warning - CodingSchemeDesignator is deprecated - attribute <CodingSchemeDesignator> = <99SDM>",
+    371
+   ],
+   [
+    "Warning - Retired attribute - (tag)",
+    317
+   ],
+   [
+    "Warning - CodingSchemeDesignator is deprecated - attribute <CodingSchemeDesignator> = <SNM3>",
+    217
+   ],
+   [
+    "Warning - Missing attribute or value that would be needed to build DICOMDIR - Study ID",
+    200
+   ],
+   [
+    "Warning - Value dubious for this VR - (tag) - Retired Person Name form",
+    200
+   ],
+   [
+    "Warning - Dicom dataset contains attributes not present in standard DICOM IOD - this is a Standard Extended SOP Class",
+    200
+   ],
+   [
+    "Warning - Dicom dataset contains retired attributes",
+    199
+   ],
+   [
+    "Warning - CodingSchemeDesignator is deprecated - attribute <CodingSchemeDesignator> = <SRT>",
+    70
+   ],
+   [
+    "Warning - Unrecognized defined term <RTSUB> for value 1 of attribute <Randoms Correction Method>",
+    37
+   ],
+   [
+    "Warning - Unrecognized defined term <SLSENS> for value 8 of attribute <Corrected Image>",
+    36
+   ],
+   [
+    "Warning - is only permitted to be empty when actually unknown; should be absent (not empty) if an unpaired body part, and have a value if a paired body part - attribute <Laterality>",
+    20
+   ],
+   [
+    "Warning - Unrecognized defined term <SLSENS> for value 5 of attribute <Corrected Image>",
+    17
+   ],
+   [
+    "Warning - Unrecognized defined term <SLSENS> for value 7 of attribute <Corrected Image>",
+    15
+   ],
+   [
+    "Warning - Value is zero for value 1 of attribute <Echo Train Length>",
+    12
+   ],
+   [
+    "Warning - Unrecognized defined term <FAST_GEMS> for value 1 of attribute <Scan Options>",
+    11
+   ],
+   [
+    "Warning - Attribute is not present in standard DICOM IOD - (tag) -set UID",
+    10
+   ],
+   [
+    "Warning - Unrecognized defined term <SAT_GEMS> for value 1 of attribute <Scan Options>",
+    10
+   ],
+   [
+    "Warning - Unrecognized defined term <CT_SOM5 SPI> for value 4 of attribute <Image Type>",
+    9
+   ],
+   [
+    "Warning - Unrecognized defined term <NPW> for value 2 of attribute <Scan Options>",
+    9
+   ]
+  ]
+ }
+}

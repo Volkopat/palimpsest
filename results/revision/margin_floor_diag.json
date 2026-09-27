@@ -1,0 +1,50 @@
+{
+ "florence/floor2/clean": {
+  "removal_k": 33,
+  "n": 35,
+  "flagged": 73,
+  "tp": 45
+ },
+ "florence/floor2/blur_4": {
+  "removal_k": 32,
+  "n": 35,
+  "flagged": 73,
+  "tp": 45
+ },
+ "florence/floor1/clean": {
+  "removal_k": 33,
+  "n": 35,
+  "flagged": 80,
+  "tp": 47
+ },
+ "florence/floor1/blur_4": {
+  "removal_k": 32,
+  "n": 35,
+  "flagged": 80,
+  "tp": 46
+ },
+ "easyocr-tuned/floor2/clean": {
+  "removal_k": 25,
+  "n": 35,
+  "flagged": 59,
+  "tp": 36
+ },
+ "easyocr-tuned/floor2/blur_4": {
+  "removal_k": 21,
+  "n": 35,
+  "flagged": 49,
+  "tp": 29
+ },
+ "easyocr-tuned/floor1/clean": {
+  "removal_k": 26,
+  "n": 35,
+  "flagged": 77,
+  "tp": 47
+ },
+ "easyocr-tuned/floor1/blur_4": {
+  "removal_k": 29,
+  "n": 35,
+  "flagged": 67,
+  "tp": 42
+ }
+}

@@ -1,0 +1,317 @@
+{
+ "val_full_strict": {
+  "files": 348,
+  "regions": 3487,
+  "per_mod": {
+   "MG": {
+    "regions": 35,
+    "none": 15,
+    "redacted": 20,
+    "spatial_only": 14,
+    "text_only": 2,
+    "both": 4
+   },
+   "US": {
+    "regions": 3222,
+    "none": 2645,
+    "redacted": 577,
+    "spatial_only": 478,
+    "both": 94,
+    "text_only": 5
+   },
+   "CR": {
+    "regions": 47,
+    "redacted": 34,
+    "spatial_only": 19,
+    "none": 13,
+    "both": 12,
+    "text_only": 3
+   },
+   "DX": {
+    "regions": 93,
+    "redacted": 56,
+    "spatial_only": 44,
+    "none": 37,
+    "both": 10,
+    "text_only": 2
+   },
+   "CT": {
+    "regions": 90,
+    "none": 80,
+    "redacted": 10,
+    "text_only": 10
+   }
+  },
+  "reasons": {
+   "Matches DICOM PHI tag value": 130,
+   "DOB indicator": 10,
+   "Multiple capitalized words in header": 2
+  },
+  "priority_scores": {
+   "0.6": 42,
+   "1.0": 687,
+   "0.3": 2735,
+   "0.8": 23
+  }
+ },
+ "val_margin_strict": {
+  "files": 348,
+  "regions": 3487,
+  "per_mod": {
+   "MG": {
+    "regions": 35,
+    "none": 6,
+    "redacted": 29,
+    "spatial_only": 14,
+    "margin_only": 9,
+    "text_only": 2,
+    "both": 4
+   },
+   "US": {
+    "regions": 3222,
+    "none": 2645,
+    "redacted": 577,
+    "spatial_only": 478,
+    "both": 94,
+    "text_only": 5
+   },
+   "CR": {
+    "regions": 47,
+    "redacted": 37,
+    "spatial_only": 19,
+    "none": 10,
+    "both": 12,
+    "text_only": 3,
+    "margin_only": 3
+   },
+   "DX": {
+    "regions": 93,
+    "redacted": 57,
+    "spatial_only": 44,
+    "none": 36,
+    "both": 10,
+    "text_only": 2,
+    "margin_only": 1
+   },
+   "CT": {
+    "regions": 90,
+    "none": 80,
+    "redacted": 10,
+    "text_only": 10
+   }
+  },
+  "reasons": {
+   "Matches DICOM PHI tag value": 130,
+   "DOB indicator": 10,
+   "Multiple capitalized words in header": 2
+  },
+  "priority_scores": {
+   "0.6": 42,
+   "1.0": 687,
+   "0.3": 2735,
+   "0.8": 23
+  }
+ },
+ "val_full_retain": {
+  "files": 348,
+  "regions": 3487,
+  "per_mod": {
+   "MG": {
+    "regions": 35,
+    "none": 15,
+    "redacted": 20,
+    "spatial_only": 14,
+    "text_only": 2,
+    "both": 4
+   },
+   "US": {
+    "regions": 3222,
+    "none": 2645,
+    "redacted": 577,
+    "spatial_only": 478,
+    "both": 94,
+    "text_only": 5
+   },
+   "CR": {
+    "regions": 47,
+    "redacted": 34,
+    "spatial_only": 19,
+    "none": 13,
+    "both": 12,
+    "text_only": 3
+   },
+   "DX": {
+    "regions": 93,
+    "redacted": 56,
+    "spatial_only": 44,
+    "none": 37,
+    "both": 10,
+    "text_only": 2
+   },
+   "CT": {
+    "regions": 90,
+    "none": 80,
+    "redacted": 10,
+    "text_only": 10
+   }
+  },
+  "reasons": {
+   "Matches DICOM PHI tag value": 130,
+   "DOB indicator": 10,
+   "Multiple capitalized words in header": 2
+  },
+  "priority_scores": {
+   "0.6": 42,
+   "1.0": 687,
+   "0.3": 2735,
+   "0.8": 23
+  }
+ },
+ "test_full_strict": {
+  "files": 244,
+  "regions": 1325,
+  "per_mod": {
+   "CR": {
+    "regions": 69,
+    "redacted": 56,
+    "spatial_only": 31,
+    "none": 13,
+    "both": 23,
+    "text_only": 2
+   },
+   "US": {
+    "regions": 1088,
+    "none": 1065,
+    "redacted": 23,
+    "spatial_only": 22,
+    "text_only": 1
+   },
+   "MG": {
+    "regions": 51,
+    "none": 23,
+    "redacted": 28,
+    "spatial_only": 22,
+    "both": 3,
+    "text_only": 3
+   },
+   "DX": {
+    "regions": 117,
+    "redacted": 67,
+    "spatial_only": 51,
+    "none": 50,
+    "both": 13,
+    "text_only": 3
+   }
+  },
+  "reasons": {
+   "Matches DICOM PHI tag value": 29,
+   "DOB indicator": 14,
+   "Patient name pattern": 1,
+   "Multiple capitalized words in header": 4
+  },
+  "priority_scores": {
+   "1.0": 185,
+   "0.3": 1139,
+   "0.6": 1
+  }
+ },
+ "test_margin_strict": {
+  "files": 244,
+  "regions": 1325,
+  "per_mod": {
+   "CR": {
+    "regions": 69,
+    "redacted": 58,
+    "spatial_only": 31,
+    "none": 11,
+    "both": 23,
+    "text_only": 2,
+    "margin_only": 2
+   },
+   "US": {
+    "regions": 1088,
+    "none": 1065,
+    "redacted": 23,
+    "spatial_only": 22,
+    "text_only": 1
+   },
+   "MG": {
+    "regions": 51,
+    "redacted": 43,
+    "margin_only": 15,
+    "spatial_only": 22,
+    "none": 8,
+    "both": 3,
+    "text_only": 3
+   },
+   "DX": {
+    "regions": 117,
+    "redacted": 70,
+    "spatial_only": 51,
+    "none": 47,
+    "both": 13,
+    "margin_only": 3,
+    "text_only": 3
+   }
+  },
+  "reasons": {
+   "Matches DICOM PHI tag value": 29,
+   "DOB indicator": 14,
+   "Patient name pattern": 1,
+   "Multiple capitalized words in header": 4
+  },
+  "priority_scores": {
+   "1.0": 185,
+   "0.3": 1139,
+   "0.6": 1
+  }
+ },
+ "test_full_retain": {
+  "files": 244,
+  "regions": 1325,
+  "per_mod": {
+   "CR": {
+    "regions": 69,
+    "redacted": 56,
+    "spatial_only": 31,
+    "none": 13,
+    "both": 23,
+    "text_only": 2
+   },
+   "US": {
+    "regions": 1088,
+    "none": 1065,
+    "redacted": 23,
+    "spatial_only": 22,
+    "text_only": 1
+   },
+   "MG": {
+    "regions": 51,
+    "none": 23,
+    "redacted": 28,
+    "spatial_only": 22,
+    "both": 3,
+    "text_only": 3
+   },
+   "DX": {
+    "regions": 117,
+    "redacted": 67,
+    "spatial_only": 51,
+    "none": 50,
+    "both": 13,
+    "text_only": 3
+   }
+  },
+  "reasons": {
+   "Matches DICOM PHI tag value": 29,
+   "DOB indicator": 14,
+   "Patient name pattern": 1,
+   "Multiple capitalized words in header": 4
+  },
+  "priority_scores": {
+   "1.0": 185,
+   "0.3": 1139,
+   "0.6": 1
+  }
+ }
+}

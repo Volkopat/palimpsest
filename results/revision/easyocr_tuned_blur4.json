@@ -1,0 +1,29 @@
+{
+ "blur_4/default": {
+  "detection_k": 25,
+  "n": 35,
+  "total_regions": 93,
+  "config": {}
+ },
+ "blur_4/tuned-sensitive": {
+  "detection_k": 28,
+  "n": 35,
+  "total_regions": 101,
+  "config": {
+   "text_threshold": 0.5,
+   "low_text": 0.3,
+   "link_threshold": 0.3
+  }
+ },
+ "blur_4/tuned-mag2": {
+  "detection_k": 28,
+  "n": 35,
+  "total_regions": 100,
+  "config": {
+   "mag_ratio": 2.0,
+   "text_threshold": 0.5,
+   "low_text": 0.3,
+   "link_threshold": 0.3
+  }
+ }
+}
