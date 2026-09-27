@@ -8,8 +8,8 @@ authors:
     orcid: "https://orcid.org/0009-0003-6878-1712"
 license: Apache-2.0
 repository-code: "https://github.com/Volkopat/palimpsest"
-version: "1.0.0"
-date-released: "2026-07-16"
+version: "1.1.0"
+date-released: "2026-09-27"
 keywords:
   - de-identification
   - DICOM
@@ -17,3 +17,5 @@ keywords:
   - MIDI-B
   - vision-language model
   - reproducibility
+  - OCR
+  - conformance

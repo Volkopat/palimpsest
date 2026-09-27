@@ -1,15 +1,35 @@
 {
   "title": "palimpsest: Reproduction harness for burned-in PHI removal on the MIDI-B benchmark",
   "upload_type": "software",
-  "description": "Reproduction harness for the manuscript \"An On-Premise, Open-Weights Vision-Language Pipeline for Burned-In PHI Removal: Detection, Decision, and Robustness on MIDI-B.\" Implements the published PHI-classifier, spatial-prior fallback, and margin-rule specification (Supplementary Material A) and reproduces, from the public MIDI-B benchmark and public Florence-2-base weights, the controlled detector-swap (detection 34/33/11, classifier 10/10), clean removal (33/35), and the degradation-removal profile. Contains no proprietary code; the vendor zone catalogue is withheld.",
+  "description": "Reproduction harness for the manuscript \"An On-Premise, Open-Weights Vision-Language Pipeline for Burned-In PHI Removal: Detection, Decision, and Image Degradation on MIDI-B.\" Implements the published PHI-classifier, spatial-prior fallback and margin-rule specification (Supplementary Material A) and reproduces, from the public MIDI-B benchmark and public Florence-2-base weights, the controlled detector-swap (detection 34/33/11, classifier 10/10), clean removal (33/35) and the degradation-removal profile. Version 1.1.0 adds the revision round: the tuned-OCR configuration grid, the rendering measurement, the dciodvfy conformance run with its matched input control, the nine corruption conditions and a headless driver for the fairly configured RSNA CTP arm with its positive and negative controls, together with machine-readable results for every number added in revision. Contains no proprietary code; the vendor zone catalogue is withheld, and the six revision scripts that call into the withheld de-identification pipeline are shipped as run and labelled as such.",
   "license": "Apache-2.0",
   "access_right": "open",
   "creators": [
-    { "name": "Patil, Digvijay", "orcid": "0009-0003-6878-1712" }
+    {
+      "name": "Patil, Digvijay",
+      "orcid": "0009-0003-6878-1712"
+    }
   ],
-  "keywords": ["de-identification", "DICOM", "burned-in PHI", "MIDI-B", "vision-language model", "OCR", "reproducibility"],
+  "keywords": [
+    "de-identification",
+    "DICOM",
+    "burned-in PHI",
+    "MIDI-B",
+    "vision-language model",
+    "OCR",
+    "reproducibility"
+  ],
   "related_identifiers": [
-    { "identifier": "10.7937/cf2p-aw56", "relation": "references", "scheme": "doi" },
-    { "identifier": "10.7937/s17z-r072", "relation": "references", "scheme": "doi" }
-  ]
+    {
+      "identifier": "10.7937/cf2p-aw56",
+      "relation": "references",
+      "scheme": "doi"
+    },
+    {
+      "identifier": "10.7937/s17z-r072",
+      "relation": "references",
+      "scheme": "doi"
+    }
+  ],
+  "version": "1.1.0"
 }
